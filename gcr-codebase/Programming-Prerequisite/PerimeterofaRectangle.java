@@ -4,7 +4,7 @@ public class PerimeterofaRectangle{
 	Scanner sc = new Scanner(System.in);
 	int length;
 	length = sc.nextint;
-	int width;
+	int width;    
 	width = sc.nextint;
 	int Perimeter = 2 * (length + width);
 	System.out.println(Perimeter);
