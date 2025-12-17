@@ -7,7 +7,7 @@ public class  DistanceinYardsAndMiles{
 	 float distanceInFeet;
 	 distanceInFeet = sc.nextFloat();
      float miles = (distanceInFeet/5280);
-	 float yards = (distanceInFeet/3);
+	 float yards = (distanceInFeet/3); 
 	 
 	 //to print converted values
 	 System.out.println("The distance in Yards and Miles is " + yards + " & "  + miles);
