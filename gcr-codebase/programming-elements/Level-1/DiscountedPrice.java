@@ -3,7 +3,7 @@ public class DiscountedPrice{
 		
 		//to find discounted and calcualte discounted price
         int fee=125000;
-        int discountPercent=10;
+        int discountPercent=10; 
         int discount=fee*discountPercent/100;
         int finaldiscountedfee=fee-discount;
 		
