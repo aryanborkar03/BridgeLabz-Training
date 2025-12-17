@@ -6,7 +6,7 @@ public static void main(String args[])
 	 
 	 
 	//to perform double operations using operator precedence
-
+ 
 	 double a;
 	 a = sc.nextDouble();
      double b;
