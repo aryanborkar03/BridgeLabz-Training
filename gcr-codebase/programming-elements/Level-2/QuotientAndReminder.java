@@ -8,7 +8,7 @@ public class  QuotientAndReminder{
 	 int number1;
 	 number1 = sc.nextInt();
      int number2;
-     number2 = sc.nextInt();
+     number2 = sc.nextInt(); 
      int quotient = number1 / number2;
 	 int reminder = number1 % number2;
 	 
