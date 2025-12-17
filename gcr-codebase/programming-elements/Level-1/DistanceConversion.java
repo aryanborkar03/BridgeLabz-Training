@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner; 
 public class DistanceConversion{
 	
 	//to convert Km to input
