@@ -8,7 +8,7 @@ public class AreaOfTriangle {
 	//calculating the area of the triangle
         int base = sc.nextInt();
         int height = sc.nextInt();
-		double area = 0.5 * base * height;
+		double area = 0.5 * base * height; 
         double areaCentimeters = area;   
 
 
