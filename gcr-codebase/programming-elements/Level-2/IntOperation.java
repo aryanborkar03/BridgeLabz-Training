@@ -5,7 +5,7 @@ public static void main(String args[])
 	 //to perform integer operations using operator precedence
 	 Scanner sc = new Scanner(System.in);
 	 int a;
-	 a = sc.nextInt();
+	 a = sc.nextInt(); 
      int b;
      b = sc.nextInt();
      int c;
