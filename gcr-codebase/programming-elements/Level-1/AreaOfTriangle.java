@@ -4,7 +4,7 @@ public class AreaOfTriangle {
     Scanner sc = new Scanner(System.in);
 
 
-
+ 
 	//calculating the area of the triangle
         int base = sc.nextInt();
         int height = sc.nextInt();
