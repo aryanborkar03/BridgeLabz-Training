@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class  PerimeterOfSquare{
     public static void main(String args[])
-	{
+	{ 
 	 //to find side from perimeter of the square
 	 Scanner sc = new Scanner(System.in);
 	 int perimeter;
