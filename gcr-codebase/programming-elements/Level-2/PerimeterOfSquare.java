@@ -4,7 +4,7 @@ public class  PerimeterOfSquare{
 	{
 	 //to find side from perimeter of the square
 	 Scanner sc = new Scanner(System.in);
-	 int perimeter;
+	 int perimeter; 
 	 perimeter = sc.nextInt();
      int side = (perimeter/4);
 	 
