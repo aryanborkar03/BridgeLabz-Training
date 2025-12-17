@@ -8,7 +8,7 @@ public class CalculateTotalPrice{
 	 double unitPrice;
 	 unitPrice = sc.nextInt();
 	 double quantity;
-	 quantity = sc.nextInt();
+	 quantity = sc.nextInt(); 
 	 double totalPrice = (unitPrice*quantity);
 
     // to print the totalPrice of given  quantity 
