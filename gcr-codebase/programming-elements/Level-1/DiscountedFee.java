@@ -8,7 +8,7 @@ public class DiscountedFee{
         int fee=sc.nextInt();
         int discountPercent=input.nextInt();
         int discount=fee*discountPercent/100;
-        int finaldiscountedfee=fee-discount;
+        int finaldiscountedfee=fee-discount; 
 
 
 
