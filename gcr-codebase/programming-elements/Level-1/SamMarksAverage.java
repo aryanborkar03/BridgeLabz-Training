@@ -1,7 +1,7 @@
 public class SamMarksAverage{
     public static void main(String args[])
 	{ 
-	
+	   
 	
 	  // taken as input marks of Sam and stored the average in average variable
 	  int maths = 94;
