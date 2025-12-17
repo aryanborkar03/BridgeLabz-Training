@@ -1,6 +1,6 @@
 public class PenDistribution{
     public static void main(String[]args){
-		
+		 
 		//to do pen distribution, 
         int totalNumberofPens=14;
         int numberOfStudents=3;
