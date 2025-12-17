@@ -1,4 +1,4 @@
-public class ProfitLossPercentage{
+public class ProfitLossPercentage{ 
     public static void main(String args[])
 	{
 		
