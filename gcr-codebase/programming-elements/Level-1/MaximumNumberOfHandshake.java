@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class MaximumNumberOfHandshake{
     public static void main(String args[])
-	{
+	{ 
 	 
 	 //to find max number of handshakes possible
 	 Scanner sc = new Scanner(System.in);
