@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class CalculateTotalPrice{
     public static void main(String args[])
-	{
+	{ 
 		
 	//to calculate total price fro unitPrice and quantity	
 	 Scanner sc = new Scanner(System.in);
