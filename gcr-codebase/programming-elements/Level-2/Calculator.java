@@ -11,7 +11,7 @@ public static void main(String[] args) {
         int addition = number1 + number2;
         int subtraction = number1 - number2;
         int multiplication = number1 * number2;
-
+ 
         int division = number1 / number2;
 
 
