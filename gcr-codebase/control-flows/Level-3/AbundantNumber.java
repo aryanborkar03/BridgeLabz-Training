@@ -8,7 +8,7 @@ public class AbundantNumber{
     int number=sc.nextInt();
 
     int sum=0;
-
+   
     //use for loop to find sum of divisors
     for(int i=1;i<number;i++){
         if(number%i==0){
