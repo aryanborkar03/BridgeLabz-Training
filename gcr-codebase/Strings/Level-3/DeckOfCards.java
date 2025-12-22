@@ -11,7 +11,7 @@ public class DeckOfCards {
             }
         }
         return deck;
-    }
+    }    
 
     //shuffle deck
     public static String[] shuffleDeck(String[] deck){
