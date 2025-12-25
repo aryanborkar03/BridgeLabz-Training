@@ -7,7 +7,7 @@ public class CharFrequency {
 
         for(int i=0;i<text.length();i++)
             freq[text.charAt(i)]++;
-
+ 
         int count = 0;
         for(int i=0;i<256;i++)
             if(freq[i] > 0)
