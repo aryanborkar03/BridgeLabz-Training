@@ -3,7 +3,7 @@ public class PalindromeCheck {
 
     //logic 1: using start and end index
     public static boolean isPalindromeLoop(String text){
-        int start = 0;
+        int start = 0; 
         int end = text.length() - 1;
 
         while(start < end){
