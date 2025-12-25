@@ -14,7 +14,7 @@ public class ArrayIndexOutOfBoundsException{
         names[i]=input.next();
     }
 
-    //call method to handle ArrayIndexOutOfBoundsException
+    //call the method 
     handleException(names);
    }
 
@@ -24,6 +24,11 @@ public class ArrayIndexOutOfBoundsException{
        //this will generate ArrayIndexOutOfBoundsException
        System.out.println(names[names.length]);
    }
+   
+   
+   
+   
+   
 
    //method to handle ArrayIndexOutOfBoundsException using try-catch
    public static void handleException(String names[]){
