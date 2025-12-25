@@ -1,4 +1,4 @@
-import java.util.Scanner;
+ import java.util.Scanner;
 public class FirstNonRepeatingChar {
 
     //method to find first non-repeating character
