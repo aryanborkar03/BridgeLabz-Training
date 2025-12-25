@@ -24,3 +24,11 @@ core-java-practice/
 │── leet-code-codebase/
 │── scenario-based-codebase/
 │── README.md
+
+## Day 2 – Git Practice & Basic Java Programs  
+Date: 17-Dec-2025
+
+- Practiced Git workflow to understand version control and commits.
+- Worked on very basic Java programs to understand syntax and program structure.
+- Practiced adding, committing, and pushing Java files using `git add`, `git commit`, and `git push`.
+- Gained hands-on experience by updating the repository regularly.
