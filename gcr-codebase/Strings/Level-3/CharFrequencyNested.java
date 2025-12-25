@@ -8,7 +8,7 @@ public class CharFrequencyNested {
 
         for(int i=0;i<chars.length;i++){
             freq[i] = 1;
-            if(chars[i] == '0')
+            if(chars[i] == '0') 
                 continue;
 
             for(int j=i+1;j<chars.length;j++){
