@@ -37,6 +37,9 @@ Date: 17-Dec-2025
 - Practiced adding, committing, and pushing Java files using `git add`, `git commit`, and `git push`.
 - Gained hands-on experience by updating the repository regularly.
 
+**Code Link:**  [Programming Prerequisites](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/programming-requisites)
+
+
 ## Day 3 – Programming Elements in Java  
 Date: 18-Dec-2025
 
@@ -45,6 +48,9 @@ Date: 18-Dec-2025
 - Worked with user input and output using standard input methods.
 - Solved practice problems based on programming elements.
 - Committed and pushed solutions to the GitHub repository.
+
+ **Code Link:**    [Programming Elements](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/programming-elements)
+
 ## Day 4 – Control Flow & Logical Constructs  
 Date: 19-Dec-2025
 
@@ -54,3 +60,19 @@ Date: 19-Dec-2025
 - Used `break` and `continue` statements in loop-based programs.
 - Solved logical problems such as factorial calculation and prime number check.
 - Committed and pushed control flow related programs to the repository.
+
+**Code Link:**   [Control Flow](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/control-flows)
+
+
+## Day 5 – Arrays & Basic Problem Solving  
+Date: 20-Dec-2025
+
+- Studied single-dimensional and multi-dimensional arrays in Java.
+- Practiced array declaration, initialization, and traversal.
+- Implemented array-based logic and operations.
+- Solved basic array problems such as finding missing elements.
+- Improved logical thinking through hands-on array problem solving.
+- Committed and pushed array-related programs to the repository.
+
+**Code Link:**  [Arrays](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/arrays)
+
