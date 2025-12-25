@@ -6,7 +6,7 @@ public class UniqueCharacters {
         int count = 0;
         try{
             while(true){
-                text.charAt(count);
+                text.charAt(count); 
                 count++;
             }
         }
