@@ -47,7 +47,7 @@ public class UniqueCharFrequency {
     public static void main(String[] args){
 
         Scanner sc = new Scanner(System.in);
-        String text = sc.nextLine();
+        String text = sc.nextLine(); 
 
         String[][] data = findFrequency(text);
 
@@ -55,3 +55,4 @@ public class UniqueCharFrequency {
             System.out.println(data[i][0] + "\t" + data[i][1]);
     }
 }
+ 
