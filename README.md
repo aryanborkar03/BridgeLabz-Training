@@ -45,3 +45,12 @@ Date: 18-Dec-2025
 - Worked with user input and output using standard input methods.
 - Solved practice problems based on programming elements.
 - Committed and pushed solutions to the GitHub repository.
+## Day 4 – Control Flow & Logical Constructs  
+Date: 19-Dec-2025
+
+- Studied control flow statements including `if`, `if-else`, and `switch`.
+- Practiced the use of the ternary operator.
+- Learned iteration statements: `for`, `while`, and `do-while` loops.
+- Used `break` and `continue` statements in loop-based programs.
+- Solved logical problems such as factorial calculation and prime number check.
+- Committed and pushed control flow related programs to the repository.
