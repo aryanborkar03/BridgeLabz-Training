@@ -101,12 +101,8 @@ BridgeLabz-Training/
 🔗 **Code Link:** [Day 5 – Arrays](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/arrays)
 
 ---
-
-## 📅 Week 2: Extra programming Fundamentals & practice
-
----
   
- ### 🗓 Day 1 – Java Methods
+ ### 🗓 Day 6 – Java Methods
  **(Date: 20-Dec-2025)**
   
  - Studied Java methods:
@@ -117,10 +113,14 @@ BridgeLabz-Training/
  - Implemented programs for reusable methods.
  - Committed and pushed solutions to the repository.
   
-🔗 **Code Link:**  [Day 1 – Methods](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Methods)
-  
+🔗 **Code Link:**  [Day 6 – Methods](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Methods)
+
 ---
-### 🗓 Day 2 – Java Strings
+
+## 📅 Week 2: Extra programming Fundamentals & practice
+
+---
+### 🗓 Day 1 – Java Strings
 **(Date: 22-Dec-2025)**
 
 - Studied String concepts:
@@ -130,12 +130,12 @@ BridgeLabz-Training/
 - Implemented programs for string manipulation.
 - Committed and pushed solutions to the repository.
 
-🔗 **Code Link:** [Day 2 – Strings](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Strings)
+🔗 **Code Link:** [Day 1 – Strings](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Strings)
 
 ---
 
   
-### 🗓 Day 3 – Extra Built-in Functions & String Practice  
+### 🗓 Day 2 – Extra Built-in Functions & String Practice  
 **(Date: 23-Dec-2025)**
   
 
@@ -146,4 +146,31 @@ BridgeLabz-Training/
 - Committed and pushed all changes successfully.
 
   
-🔗 **Code Link:** [Day 3 – Extras](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Extras) 
+🔗 **Code Link:** [Day 2 – Extras](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Extras) 
+---
+### 🗓 Day 3 – Scenario Based and Leetcode Questions
+**(Date: 24-Dec-2025)**
+
+- Studied Scenario based Questions:
+ - BMI Tracker
+ - Coffee Counter
+  
+- Solved 5 Leetcode Arrays Questions
+  
+  - Two sum
+ 
+  - Longest Common Prefix
+ 
+  - Remove Duplicates
+ 
+  - Remove Elements
+ 
+  - Search Insert Position
+
+🔗 **Code Link:**  
+[Day 3 – Scenario-based](https://github.com/Anuj-Vishwakarma94/BridgeLabz-Training/tree/core-java-practice/scenario-based-codebase)
+
+[Day 3 – Leetcode](https://github.com/Anuj-Vishwakarma94/BridgeLabz-Training/tree/core-java-practice/leet-code-codebase/Arrays)
+
+---
+
