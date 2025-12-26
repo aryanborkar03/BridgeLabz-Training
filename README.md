@@ -1,9 +1,11 @@
 # BridgeLabz-Training
+
 ---
 
 This repository documents my learning progress during the BridgeLabz Java training program. The training focused on building strong fundamentals in Git, GitHub, and Core Java through daily practice, structured problem solving, and regular code commits. Each section reflects the concepts learned and the hands-on programs implemented during the training period.
 
 ---
+
 
 ## 📅 Week 1: Git, GitHub & Java Programming Fundamentals
 
@@ -31,28 +33,14 @@ BridgeLabz-Training/
 - Successfully pushed files to the remote repository.
 
 ---
+
 ### 🗓 Day 2 – Git Practice & Basic Java Programs  
-**(Date: 17-Dec-2025)**
+**(Date: 16-Dec-2025)**
 
 - Practiced Git workflow to understand commits and version control.
-- Solved basic Java programs to understand syntax and program structure.
+- Solved very basic Java programs to understand syntax and structure.
 - Practiced adding, committing, and pushing Java files to GitHub.
 
-🔗 **Code Link:** [Day 2 – Programming Prerequisites](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/programming-requisites)
-
----
-
-### 🗓 Day 3 – Programming Elements in Java  
-**(Date: 18-Dec-2025)**
-
-- Studied core programming elements:
-  - Variables and data types
-  - Operators
-  - Type conversion
-  - User input using `Scanner`
-- Solved practice programs based on the above concepts.
-- Committed and pushed all solutions to the repository.
-
-🔗 **Code Link:** [Day 3 – Programming Elements](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/programming-elements)
+🔗 **Code Link:** [Day 2 – Basic Java Programs](https://github.com/Abhishek-Puri-Goswami/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/programming-requisites)
 
 ---
