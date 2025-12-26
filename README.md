@@ -2,7 +2,7 @@
 
 This document tracks my daily learning progress during the BridgeLabz Java training program.
 
-## Day 1 – Git & GitHub Setup  
+## 🗓️Day 1 – Git & GitHub Setup  
 Date: 16-Dec-2025
 
 - Installed and configured Git on the system.
@@ -11,7 +11,7 @@ Date: 16-Dec-2025
 - Created the initial project structure for Core Java practice.
 - Successfully pushed the initial setup to the remote repository.
 
-### Project Folder Structure
+### 🗓️Project Folder Structure
 ```
 core-java-practice/
 │── gcr-codebase/
@@ -29,7 +29,7 @@ core-java-practice/
 
 
 
-## Day 2 – Git Practice & Basic Java Programs  
+## 🗓️Day 2 – Git Practice & Basic Java Programs  
 Date: 17-Dec-2025
 
 - Practiced Git workflow to understand version control and commits.
@@ -40,7 +40,7 @@ Date: 17-Dec-2025
 **Code Link:**  [Programming Prerequisites](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/programming-requisites)
 
 
-## Day 3 – Programming Elements in Java  
+## 🗓️Day 3 – Programming Elements in Java  
 Date: 18-Dec-2025
 
 - Studied core Java programming elements including variables and data types.
@@ -51,7 +51,7 @@ Date: 18-Dec-2025
 
  **Code Link:**    [Programming Elements](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/programming-elements)
 
-## Day 4 – Control Flow & Logical Constructs  
+## 🗓️Day 4 – Control Flow & Logical Constructs  
 Date: 19-Dec-2025
 
 - Studied control flow statements including `if`, `if-else`, and `switch`.
@@ -64,7 +64,7 @@ Date: 19-Dec-2025
 **Code Link:**   [Control Flow](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/control-flows)
 
 
-## Day 5 – Arrays & Basic Problem Solving  
+## 🗓️Day 5 – Arrays & Basic Problem Solving  
 Date: 20-Dec-2025
 
 - Studied single-dimensional and multi-dimensional arrays in Java.
@@ -77,7 +77,7 @@ Date: 20-Dec-2025
 **Code Link:**  [Arrays](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/arrays)
 
 
-## Day 6 – Strings & Methods  
+## 🗓️Day 6 – Strings & Methods  
 Date: 22-Dec-2025
 
 - Studied String concepts including string creation and common String methods.
@@ -90,7 +90,7 @@ Date: 22-Dec-2025
 
 **Code Link – Methods:**  [Methods](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Methods)
 
-## Day 7 – Built-in Functions & Extra Practice  
+## 🗓️Day 7 – Built-in Functions & Extra Practice  
 Date: 23-Dec-2025
 
 - Practiced Java built-in functions.
