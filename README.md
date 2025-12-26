@@ -42,5 +42,5 @@ BridgeLabz-Training/
 - Practiced adding, committing, and pushing Java files to GitHub.
 
 🔗 **Code Link:** [Day 2 – Basic Java Programs](https://github.com/Abhishek-Puri-Goswami/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/programming-requisites)
-
----
+ 
+---  
