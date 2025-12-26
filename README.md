@@ -59,7 +59,7 @@ BridgeLabz-Training/
 - Solved practice programs based on the above concepts.
 - Committed and pushed all solutions to the repository.
 
-🔗 **Code Link:** [Day 3 – Programming Elements](https://github.com/Abhishek-Puri-Goswami/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/programming-elements)
+🔗 **Code Link:** [Day 3 – Programming Elements](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/programming-elements)
 
 ---
 ### 🗓 Day 4 – Control Flow & Logical Constructs  
@@ -79,7 +79,7 @@ BridgeLabz-Training/
   - Sum of Natural numbers
 - Committed and pushed solutions to the repository.
 
-🔗 **Code Link:** [Day 4 – Control Flow](https://github.com/Abhishek-Puri-Goswami/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/control-flows)
+🔗 **Code Link:** [Day 4 – Control Flow](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/control-flows)
 
 
 ---
@@ -98,7 +98,7 @@ BridgeLabz-Training/
 - Strengthened logical thinking using array problems.
 - Committed and pushed solutions to the repository.
 
-🔗 **Code Link:** [Day 5 – Arrays](https://github.com/Abhishek-Puri-Goswami/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/arrays)
+🔗 **Code Link:** [Day 5 – Arrays](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/arrays)
 
 ---
 
@@ -106,7 +106,7 @@ BridgeLabz-Training/
 
 ---
   
- ### 🗓 Day 6 – Java Methods
+ ### 🗓 Day 1 – Java Methods
  **(Date: 20-Dec-2025)**
   
  - Studied Java methods:
@@ -117,10 +117,10 @@ BridgeLabz-Training/
  - Implemented programs for reusable methods.
  - Committed and pushed solutions to the repository.
   
-🔗 **Code Link:**  [Day 6 – Methods](https://github.com/Abhishek-Puri-Goswami/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/methods)
+🔗 **Code Link:**  [Day 1 – Methods](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Methods)
   
 ---
-### 🗓 Day 7 – Java Strings
+### 🗓 Day 2 – Java Strings
 **(Date: 22-Dec-2025)**
 
 - Studied String concepts:
@@ -130,6 +130,20 @@ BridgeLabz-Training/
 - Implemented programs for string manipulation.
 - Committed and pushed solutions to the repository.
 
-🔗 **Code Link:** [Day 7 – Strings](https://github.com/Abhishek-Puri-Goswami/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/strings)
+🔗 **Code Link:** [Day 2 – Strings](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Strings)
 
 ---
+
+  
+### 🗓 Day 3 – Extra Built-in Functions & String Practice  
+**(Date: 23-Dec-2025)**
+  
+
+- Practiced Java built-in classes and utility functions.
+- Implemented programs such as a temperature converter.
+- Improved understanding of input handling and type conversion.
+- Organized extra practice programs into appropriate folders.
+- Committed and pushed all changes successfully.
+
+  
+🔗 **Code Link:** [Day 3 – Extras](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Extras) 
