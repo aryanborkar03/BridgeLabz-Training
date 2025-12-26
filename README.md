@@ -42,3 +42,17 @@ BridgeLabz-Training/
 
 ---
 
+### 🗓 Day 3 – Programming Elements in Java  
+**(Date: 18-Dec-2025)**
+
+- Studied core programming elements:
+  - Variables and data types
+  - Operators
+  - Type conversion
+  - User input using `Scanner`
+- Solved practice programs based on the above concepts.
+- Committed and pushed all solutions to the repository.
+
+🔗 **Code Link:** [Day 3 – Programming Elements](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/programming-elements)
+
+---
