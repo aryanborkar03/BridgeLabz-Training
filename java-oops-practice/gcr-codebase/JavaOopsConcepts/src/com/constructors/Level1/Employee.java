@@ -1,45 +1,24 @@
 package com.constructors.Level1;
 
 public class Employee {
-
     public int employeeID;
     protected String department;
-    private double salary;
+    private double salary; // private to control access
 
-    // constructor
-    public Employee(int id, String dept, double sal) {
-        employeeID = id;
-        department = dept;
-        salary = sal;
+    public Employee(int employeeID, String department, double salary) {
+        this.employeeID = employeeID;
+        this.department = department;
+        this.salary = salary;
     }
 
     // public method to modify salary
-    public void setSalary(double sal) {
-        salary = sal;
+    public void setSalary(double salary) {
+        if (salary > 0) {
+            this.salary = salary;
+        }
     }
 
-    // getter for salary
     public double getSalary() {
         return salary;
-    }
-
-    // ✅ main is in the public class
-    public static void main(String[] args) {
-        Manager m1 = new Manager(201, "IT", 60000);
-
-        System.out.println(m1.getSalary());
-        m1.showDetails();
-    }
-}
-
-class Manager extends Employee {
-
-    Manager(int id, String dept, double sal) {
-        super(id, dept, sal);
-    }
-
-    void showDetails() {
-        System.out.println(employeeID);
-        System.out.println(department);
     }
 }
