@@ -1,44 +1,24 @@
 package com.constructors.Level1;
 
 public class BankAccount {
-
     public int accountNumber;
     protected String accountHolder;
-    private double balance;
+    private double balance; // private for safety
 
-    // constructor
-    public BankAccount(int accNo, String holder, double bal) {
-        accountNumber = accNo;
-        accountHolder = holder;
-        balance = bal;
+    public BankAccount(int accountNumber, String accountHolder, double balance) {
+        this.accountNumber = accountNumber;
+        this.accountHolder = accountHolder;
+        this.balance = balance;
     }
 
-    public void setBalance(double bal) {
-        balance = bal;
-    }
-
+    // public methods to access and update balance
     public double getBalance() {
         return balance;
     }
 
-    // ✅ main moved here
-    public static void main(String[] args) {
-        SavingsAccount s1 =
-                new SavingsAccount(12345, "Rahul", 5000);
-
-        System.out.println(s1.getBalance());
-        s1.showDetails();
-    }
-}
-
-class SavingsAccount extends BankAccount {
-
-    SavingsAccount(int accNo, String holder, double bal) {
-        super(accNo, holder, bal);
-    }
-
-    void showDetails() {
-        System.out.println(accountNumber);
-        System.out.println(accountHolder);
+    public void setBalance(double balance) {
+        if (balance >= 0) {
+            this.balance = balance;
+        }
     }
 }
