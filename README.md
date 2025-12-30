@@ -189,3 +189,21 @@ BridgeLabz-Training/
 
 ---
 
+## 📅 Week 3: Object-Oriented Concepts
+
+### 🗓 Day 1 – Scenario Based Problems  
+**Date:** 29-Dec-2025
+
+- Solved scenario-based questions:
+  - `BusAttendance`
+  - `NumberGuessGame`
+  - `DiscountDashboard`
+  - `ParkingLotSystem`
+  - `PhoneRechargeSimulator`
+- Organized programs into proper folders  
+- Committed and pushed all changes successfully  
+
+🔗 **Code Link:**  
+👉 [Day 1 – Scenario-based](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/scenario-based-codebase)
+
+---
