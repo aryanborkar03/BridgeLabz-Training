@@ -174,3 +174,18 @@ BridgeLabz-Training/
 
 ---
 
+## 🗓 Day 4 – Scenario Based Problems  
+**Date:** 26-Dec-2025
+
+- Solved scenario-based questions:
+  - `ElectionBooth`
+  - `MetroFare`
+  - `ResultGenerator`
+- Organized programs into proper folders  
+- Committed and pushed all changes successfully  
+
+🔗 **Code Link:**  
+👉 [Day 4 – Scenario-based](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/scenario-based-codebase)
+
+---
+
