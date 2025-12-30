@@ -207,3 +207,19 @@ BridgeLabz-Training/
 👉 [Day 1 – Scenario-based](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/scenario-based-codebase)
 
 ---
+
+### 🗓 Day 2 – Scenario Based Problems and LeetCode Practice  
+**Date:** 30-Dec-2025
+
+- Solved scenario-based questions:
+  - `LibraryFineCalculator`
+  - `MovieTicketBookingApp`
+  - `FitnessTracker`
+  - `TemperatureLogger`
+  - `TrainReservationQueue`
+- Organized programs into proper folders  
+- Committed and pushed all changes successfully  
+
+🔗 **Code Links:**  
+👉 [Day 2 – Scenario-based](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/scenario-based-codebase)  
+👉 [Day 2 – LeetCode Practice](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/leet-code-codebase)
