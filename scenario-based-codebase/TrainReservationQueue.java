@@ -1,0 +1,59 @@
+import java.util.Scanner;
+    public class  TrainReservationQueue {
+    public static void main(String[] args){
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Welcome to Ticket Booking Portal!");
+	System.out.println("Enter the City you wanna travel: " + "\n Delhi" + "\n Mumbai" + "\n Banglore" + "Gangtok");
+	
+	int seats = 3;
+	      while(seats >0)
+		  { 
+	      
+		    
+			String ticket = sc.nextLine().toLowerCase();
+			
+			switch (ticket) {
+			
+			case "delhi" :
+		        System.out.println("You have Succesfull booked Ticket for Delhi");
+				seats--;
+		        break;
+		    
+			case "mumbai" :
+		        System.out.println("You have Succesfull booked Ticket for Mumbai");
+			    seats--;
+				break;
+			
+			case "banglore" :
+		        System.out.println("You have Succesfull booked Ticket for Banglore");
+				seats--;
+				break;
+			
+			
+			case "gangtok" :
+		        System.out.println("You have Succesfull booked Ticket for Gangtok");
+				seats--;
+				break;
+				
+		    default :
+		       System.out.println("Invalid Input");	
+		
+				
+			
+			}
+			
+			}
+	
+	    
+		if(seats <= 0)
+		{
+			System.out.println("Sorry,No more Seats");
+		}
+		
+		else
+		{
+			System.out.println("Thanks for Booking");
+		}
+	}
+	
+}
