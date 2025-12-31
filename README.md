@@ -214,7 +214,7 @@ BridgeLabz-Training/
 - Solved scenario-based questions:
   - `LibraryFineCalculator`
   - `MovieTicketBookingApp`
-  - `FitnessTracker`
+  - `SandeepFitnessTracker`
   - `TemperatureLogger`
   - `TrainReservationQueue`
 - Organized programs into proper folders  
