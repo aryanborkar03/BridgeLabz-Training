@@ -110,7 +110,7 @@ Object-Oriented Programming (java-oops-practice)
 
 - 📌 [Classes and Objects](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/classandobject)
 - 📌 [Constructors](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/constructors/Level1)
-- 📌 [In-built Functions](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/inbuiltfunctions)
+- 📌 [In-built Functions](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/inbuiltfunction)
 - 📌 [Object Modeling](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/objectmodeling)
 - 📌 [Inheritance & Types](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/inheritance) 
 - 📌 [Encapsulation](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/encapsulation)
