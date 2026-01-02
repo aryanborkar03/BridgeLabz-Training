@@ -72,4 +72,56 @@ Learning Milestones
 | 14  | 01-Jan | Encapsulation                   | Encapsulation concept, data hiding, getters & setters |
 
 ---
+Key Concepts Covered
 
+ - Core Java (core-java-practice)
+ - Fundamentals: Variables, data types, operators
+ - Control Structures: If-else, loops, switch-case
+ - Arrays: Single & multi-dimensional arrays
+ - Methods: Parameters, return types, overloading
+ - Strings: Manipulation, comparisons, exceptions
+ - Problem Solving: LeetCode challenges, real-world scenarios
+ 
+ ---
+Object-Oriented Programming (java-oops-practice)
+ - Classes & Objects: Creating and instantiating objects
+ - Encapsulation: Data hiding and access modifiers
+ - Constructors: Default, parameterized, overloading
+ - Abstraction: Interface-based design patterns
+ - Inheritance: Parent and Chlid relations
+
+---
+🔗 Quick Links
+## core-java-practice
+
+- 📌 [Program Prerequisites](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Program-Prerequisites)
+- 📌 [Control Flows](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/control-flows)
+- 📌 [Programming Elements](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/programming-elements)
+- 📌 [Arrays](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/arrays)
+- 📌 [Methods](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/methods)
+- 📌 [Strings](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/strings)
+- 📌 [Extras](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/extras)
+- 📌 [LeetCode Solutions](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/leet-code-codebase)
+- 📌 [Scenario-Based Solutions](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/scenario-based-codebase)
+
+---
+
+## java-oops-practice
+
+- 📌 [Classes and Objects](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/classandobject)
+- 📌 [Constructors](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/constructors/level1)
+- 📌 [In-built Functions](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/inbuiltfunctions)
+- 📌 [Object Modeling](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/objectmodeling)
+- 📌 [Inheritance & Types](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/inheritance) 
+- 📌 [Encapsulation](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/encapsulation)
+
+ 
+ 
+---
+🎓 Learnings & Best Practices
+---
+ - Code Organization: Following industrial standards
+ - Naming Conventions: Camel case, Pascal case and meaningful names
+ - Version Control: Regular commits with descriptive messages
+ - Problem-Solving: Breaking complex problems into smaller tasks
+ - Documentation: Clear comments and README files
