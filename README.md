@@ -94,13 +94,13 @@ Object-Oriented Programming (java-oops-practice)
 🔗 Quick Links
 ## core-java-practice
 
-- 📌 [Program Prerequisites](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Program-Prerequisites)
+- 📌 [Program Prerequisites](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Programming-Prerequisite)
 - 📌 [Control Flows](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/control-flows)
 - 📌 [Programming Elements](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/programming-elements)
 - 📌 [Arrays](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/arrays)
-- 📌 [Methods](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/methods)
-- 📌 [Strings](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/strings)
-- 📌 [Extras](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/extras)
+- 📌 [Methods](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Methods)
+- 📌 [Strings](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Strings)
+- 📌 [Extras](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Extras)
 - 📌 [LeetCode Solutions](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/leet-code-codebase)
 - 📌 [Scenario-Based Solutions](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/scenario-based-codebase)
 
