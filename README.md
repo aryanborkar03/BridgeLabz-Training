@@ -42,7 +42,7 @@ BridgeLabz-Training/
 - Committed and pushed all work.
 
 🔗 **Code Link:**  
-👉 [Stack And Queue](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DSAConcepts/src/com/stackandqueue)       
+👉 [Stack And Queue](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DSAConcepts/src/com/stacksandqueues)       
 👉 [HashMap And Hash Functions](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DSAConcepts/src/com/hashmapandhashfunctions)
 
 ---
