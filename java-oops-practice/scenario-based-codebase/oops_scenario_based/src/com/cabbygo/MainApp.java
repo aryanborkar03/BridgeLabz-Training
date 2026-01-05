@@ -7,7 +7,7 @@ public class MainApp {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("🚖 Welcome to CabbyGo Ride Booking!");
+        System.out.println(" Welcome to CabbyGo Ride Booking!");
 
         System.out.println("\nSelect Vehicle Type:");
         System.out.println("1. Mini");
