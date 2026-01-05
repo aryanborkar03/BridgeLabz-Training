@@ -14,6 +14,6 @@ public class Transaction {
     }
 
     public void printTransaction() {
-        System.out.println(time + " | " + details + " | ₹" + amount);
+        System.out.println(time + " | " + details + " | ₹ " + amount);
     }
 }
