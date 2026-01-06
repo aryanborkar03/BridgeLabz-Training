@@ -41,16 +41,18 @@ public class RideService implements IRideService {
     public void endRide() {
 
         if (!rideActive) {
-            System.out.println("No active ride to end.");
+            System.out.println("No Active rides to end");
             return;
         }
 
         rideActive = false;
 
-        System.out.println("\n✔ Ride Ended Successfully!");
-        System.out.println("Total Fare: ₹" + fare);
+        System.out.println("\n✔ Ride Ended Successfully!!");
+        System.out.println("Your Total Fare is Rupees:- " + fare);
         System.out.println("Thank you for riding with CabbyGo!");
     }
 
-    public double getFare() { return fare; }
+    public double getFare() 
+    
+   { return fare; }
 }
