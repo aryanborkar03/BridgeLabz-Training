@@ -57,6 +57,6 @@ public class MainApp {
             System.out.println("Ride still active!");
         }
 
-        sc.close();
+       
     }
 }
