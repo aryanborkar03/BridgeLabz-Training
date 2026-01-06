@@ -17,3 +17,5 @@ public class Transaction {
         System.out.println(time + " | " + details + " | ₹ " + amount);
     }
 }
+
+
