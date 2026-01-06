@@ -1,5 +1,6 @@
 package com.cabbygo;
 public class Driver {
+	
 
     private String name;
     private String licenseNumber;
@@ -21,3 +22,4 @@ public class Driver {
                 " | Rating: " + rating);
     }
 }
+
