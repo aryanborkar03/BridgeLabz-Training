@@ -10,3 +10,4 @@ public class Mini extends Vehicle {
         System.out.println("Mini Cab | No: " + vehicleNumber + " | Capacity: " + capacity);
     }
 }
+  
