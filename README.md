@@ -75,10 +75,6 @@ BridgeLabz-Training/
 
 ---
 
-🔗 **Code Link:**  
-👉 [Sorting Algorithms](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/gcr-codebase/DSAConcepts/src/com/sorting)
-
----
 ## 🧩 Section B : Scenario-Based Problems Progress
 
 ---
