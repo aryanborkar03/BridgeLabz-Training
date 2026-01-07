@@ -17,6 +17,9 @@ Week 1 : Fundamentals of Java Programming
 🔹 java-oops-practice
 Week 2 : Object-Oriented Programming
 
+🔹dsa-practice
+Week 3 : Data Structure and Algorithm
+
 ---
 📂 Project Structure
 ```
@@ -34,17 +37,34 @@ BridgeLabz-Training/
 │   ├── 📁 leet-code-codebase/         # LeetCode solutions
 │   └── 📁 scenario-based-codebase/    # Real-world problems
 │
-└── 📁 java-oops-practice/
-    └── 📁 gcr-codebase/
-        └── 📁 JavaOopsConcepts/
-            └── 📁 src/
-                └── 📁 com/
-                    ├── 📁 classandobject/    # Procedural vs OOP, fundamentals
-                    └── 📁 constructor/       # Constructor, access modifiers
-                    └── 📁 finalandstatic/    # Keywords, instance vs class members
-                    └── 📁 objectmodeling/    # Diagrams, relationships, communication
-                    └── 📁 inheritance/       # Types, method overriding, & access modifiers
-                    └── 📁 encapsulation/     # Encapsulation concept, data hiding, getters & setters
+|── 📁 java-oops-practice/
+|    ├── 📁 gcr-codebase/
+|    |   └── 📁 JavaOopsConcepts/
+|    |        └── 📁 src/
+|    |            └── 📁 com/
+|    |                ├── 📁 classandobject/    # Procedural vs OOP, fundamentals
+|    |                └── 📁 constructor/       # Constructor, access modifiers
+|    |                └── 📁 finalandstatic/    # Keywords, instance vs class members
+|    |                └── 📁 objectmodeling/    # Diagrams, relationships, communication
+|    |                └── 📁 inheritance/       # Types, method overriding, & access modifiers
+|    |                └── 📁 encapsulation/     # Encapsulation concept, data hiding, getters & setters
+|    ├── 📁 leet-code-codebase/                 # LeetCode solutions
+│    └── 📁 scenario-based-codebase/            # Real-world problems
+|
+|
+└── 📁 dsa-practice/
+│   └── 📁 gcr-codebase/
+│   │  └── 📁 DSAConcepts/
+│   │       └── 📁 src/
+│   │           └── 📁 com/
+│   │               ├── 📁 linkedlists/                # singly, doubly & circular
+│   │               └── 📁 stackandqueue/              # Stack:Last-In-First-Out (LIFO) & Queue:First-In-First-Out (FIFO)
+│   │               └── 📁 hashmapandhashfunctions/    # Key-Value pairs
+│   ├── 📁 leet-code-codebase/                         # LeetCode solutions
+│   └── 📁 scenario-based-codebase/                    # Real-world problems
+|
+└── README.md
+
 ```
 Learning Milestones
 ## Week 1 : Core Java Programming
@@ -72,9 +92,18 @@ Learning Milestones
 | 14  | 01-Jan | Encapsulation                   | Encapsulation concept, data hiding, getters & setters |
 
 ---
+### **Week 3 : Data Structures & Algorithms**
+
+| Day |     Date    | Topic                          | Coverage                               |
+|-----|-------------|--------------------------------|----------------------------------------|
+|  15 | 02-Jan      | DSA Basics & LinkedList        | DSA concepts, LinkedList and its types |
+|  16 | 03-Jan      | Stack, Queue & HashMap         | Core operations and basic use cases    |
+|  17 | 05-Jan      | Sorting Algorithms             | Sorting algorithms & comparison logic  |
+
+---
 Key Concepts Covered
 
- - Core Java (core-java-practice)
+### Core Java (core-java-practice)
  - Fundamentals: Variables, data types, operators
  - Control Structures: If-else, loops, switch-case
  - Arrays: Single & multi-dimensional arrays
@@ -83,12 +112,22 @@ Key Concepts Covered
  - Problem Solving: LeetCode challenges, real-world scenarios
  
  ---
-Object-Oriented Programming (java-oops-practice)
+### Object-Oriented Programming (java-oops-practice)
  - Classes & Objects: Creating and instantiating objects
  - Encapsulation: Data hiding and access modifiers
  - Constructors: Default, parameterized, overloading
  - Abstraction: Interface-based design patterns
  - Inheritance: Parent and Chlid relations
+
+---
+
+### Data Structures & Algorithms (dsa-practice)
+- DSA Fundamentals: Time & space complexity, basic problem analysis
+- Linked Lists: Singly, doubly, and circular linked lists
+- Stacks: LIFO principle, push/pop operations, stack applications
+- Queues: FIFO principle, enqueue/dequeue operations, queue variants
+- HashMaps: Key-value storage, hashing concept, basic operations
+- Sorting: Basic sorting algorithms and comparison-based sorting concepts
 
 ---
 🔗 Quick Links
@@ -115,9 +154,15 @@ Object-Oriented Programming (java-oops-practice)
 - 📌 [Inheritance & Types](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/inheritance) 
 - 📌 [Encapsulation](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/encapsulation)
 
- 
- 
+ ---
+
+dsa-practice:
+- 📌 [Linked Lists](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DSAConcepts/src/com/linkedlist)
+- 📌 [Stack And Queue](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DSAConcepts/src/com/stackandqueue)
+- 📌 [HashMaps And Hash Functions](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DSAConcepts/src/com/hashmapandhashfunctions)
+- 📌 [Sorting](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DSAConcepts/src/com/sorting)
 ---
+
 🎓 Learnings & Best Practices
 ---
  - Code Organization: Following industrial standards
