@@ -33,7 +33,7 @@ BridgeLabz-Training/
 - Practiced adding, committing, and pushing Java files to GitHub.
 
 🔗 **Code Link:**  
-👉 [Java Fundamentals and Basic Programs](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Program-Prerequisites)
+👉 [Java Fundamentals and Basic Programs](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Programming-Prerequisite)
 
 ### 🗓 Day 3 – Java Programming Elements  
 **(Date: 17-Dec-2025)**
@@ -90,7 +90,7 @@ BridgeLabz-Training/
 - Committed and pushed solutions to the repository.
 
 🔗 **Code Link:**  
-👉 [Methods Programs](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/methods)
+👉 [Methods Programs](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Methods)
 
 ### 🗓 Day 7 – Java Strings
 **(Date: 22-Dec-2025)**
@@ -102,7 +102,7 @@ BridgeLabz-Training/
 - Committed and pushed solutions to the repository.
 
 🔗 **Code Link:**  
-👉 [Strings Programs](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/strings)
+👉 [Strings Programs](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Strings)
   
 ### 🗓 Day 8 – Java Built-in Functions & String Additionals
 **(Date: 23-Dec-2025)**
@@ -128,7 +128,7 @@ BridgeLabz-Training/
 - Committed and pushed all changes successfully.
 
 🔗 **Code Link:**  
-👉 [Built-In Functions Programs](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/extras)
+👉 [Built-In Functions Programs](https://github.com/aryanborkar03/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/Extras)
 
 ---
 ## 🧩 Section B : Scenario-Based Problems Progress
