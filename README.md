@@ -44,7 +44,7 @@ BridgeLabz-Training/
 - Committed and pushed all changes successfully  
 
 🔗 **Code Link:**  
-👉 [Day 10 – Constructors](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/constructors/level1)
+👉 [Day 10 – Constructors](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/constructors/Level1)
 
 ---
 
@@ -58,7 +58,7 @@ BridgeLabz-Training/
 - Committed and pushed all work  
 
 🔗 **Code Link:**  
-👉 [Day 11 – Inbuilt Functions](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/inbuiltfunctions)
+👉 [Day 11 – Inbuilt Functions](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/inbuiltfunction)
 
 ---
 
