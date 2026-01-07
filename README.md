@@ -158,7 +158,7 @@ Key Concepts Covered
 
 dsa-practice:
 - 📌 [Linked Lists](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DSAConcepts/src/com/linkedlist)
-- 📌 [Stack And Queue](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DSAConcepts/src/com/stackandqueue)
+- 📌 [Stack And Queue](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DSAConcepts/src/com/stacksandqueues)
 - 📌 [HashMaps And Hash Functions](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DSAConcepts/src/com/hashmapandhashfunctions)
 - 📌 [Sorting](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DSAConcepts/src/com/sorting)
 ---
