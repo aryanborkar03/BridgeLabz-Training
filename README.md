@@ -60,6 +60,8 @@ BridgeLabz-Training/
 │   │               ├── 📁 linkedlists/                # singly, doubly & circular
 │   │               └── 📁 stackandqueue/              # Stack:Last-In-First-Out (LIFO) & Queue:First-In-First-Out (FIFO)
 │   │               └── 📁 hashmapandhashfunctions/    # Key-Value pairs
+|   |               └── 📁 linearandbinarysearch/      # Concepts of linear and binary Search
+|   |               └── 📁 runtimeanalysis/            # Time complexity concepts & comparison
 │   ├── 📁 leet-code-codebase/                         # LeetCode solutions
 │   └── 📁 scenario-based-codebase/                    # Real-world problems
 |
@@ -79,6 +81,8 @@ Learning Milestones
 | 6   | 20-Dec | Methods                        | Method declaration, parameters               |
 | 7   | 22-Dec | Strings                        | String creation, methods                     |
 | 8   | 23-Dec | Built-in Functions & Exceptions| Math, Random, Date-Time, exceptions          |
+
+---
 
 ## Week 2 : Object-Oriented Programming
 
@@ -100,6 +104,7 @@ Learning Milestones
 |  16 | 03-Jan      | Stack, Queue & HashMap         | Core operations and basic use cases    |
 |  17 | 05-Jan      | Sorting Algorithms             | Sorting algorithms & comparison logic  |
 |  19 | 07-jan      | linear and binary Search       | Concepts of linear and binary Search   |
+|  21 | 09-jan      | Runtime Analysis               | Time complexity concepts & comparison  |
 ---
 Key Concepts Covered
 
@@ -130,6 +135,7 @@ Key Concepts Covered
 - Sorting: Basic sorting algorithms and comparison-based sorting concepts
 - Linear Search: Simple sequential search that scans each element one-by-one to find a target.
 - Binary Search: Fast search on sorted data that repeatedly halves the search range to locate a target.
+- Runtime Analysis: Understanding how different algorithms have different time complexity as input size increases
 
 ---
 🔗 Quick Links
@@ -164,6 +170,7 @@ dsa-practice:
 - 📌 [HashMaps And Hash Functions](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DSAConcepts/src/com/hashmapandhashfunctions)
 - 📌 [Sorting](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DSAConcepts/src/com/sorting)
 - 📌 [Linear And Binary Search](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DSAConcepts/src/com/linearandbinarysearch)
+- 📌 [Runtime Analysis](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DSAConcepts/src/com/runtimeanalysis)
   
 ---
 
