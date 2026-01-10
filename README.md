@@ -58,7 +58,7 @@ BridgeLabz-Training/
   - Counting Sort
 - Understood algorithms and solved problem on each.
 - Committed and pushed all work.
-
+---
 ### 🗓 Day 19 – Linear and Binary Search
 **(Date: 07-Jan-2026)**
 - Studied Searching Algorithms:
@@ -72,6 +72,22 @@ BridgeLabz-Training/
 
 🔗 **Code Link:**  
 👉 [Sorting Algorithms](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DSAConcepts/src/com/linearandbinarysearch)
+
+---
+### 🗓 Day 21 – Runtime Analysis
+**(Date: 09-Jan-2026)**
+- Studied Runtime Analysis Concepts:
+  - Time Complexity (Best, Average, Worst Case)
+  - Space Complexity
+- Analyzed Searching Algorithms:
+  - Linear Search → O(n) time, O(1) space
+  - Binary Search → O(log n) time, O(1) space (iterative)
+- Compared performance of algorithms on different input sizes.
+- Evaluated impact of data structure choice on runtime.
+- Committed and pushed all work.
+
+🔗 **Code Link:**  
+👉 [Runtime Analysis](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DSAConcepts/src/com/runtimeanalysis)
 
 ---
 
