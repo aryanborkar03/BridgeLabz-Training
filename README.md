@@ -161,6 +161,7 @@ Key Concepts Covered
 - 📌 [Object Modeling](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/objectmodeling)
 - 📌 [Inheritance & Types](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/inheritance) 
 - 📌 [Encapsulation](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/encapsulation)
+- 📌 [Scenario-Based Solutions](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/oops_scenario_based/src/com)
 
  ---
 
@@ -171,6 +172,7 @@ dsa-practice:
 - 📌 [Sorting](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DSAConcepts/src/com/sorting)
 - 📌 [Linear And Binary Search](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DSAConcepts/src/com/linearandbinarysearch)
 - 📌 [Runtime Analysis](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DSAConcepts/src/com/runtimeanalysis)
+- 📌 [Scenario-Based Solutions](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based-codebase/dsa_scenario_based/src/com)
   
 ---
 
