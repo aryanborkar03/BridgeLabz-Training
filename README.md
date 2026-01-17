@@ -44,7 +44,7 @@ BridgeLabz-Training/
 - Committed and pushed all work.
 
 🔗 **Code Link:**  
-👉 [Stack And Queue](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DSAConcepts/src/com/stackandqueue)       
+👉 [Stack And Queue](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DSAConcepts/src/com/stacksandqueues)       
 👉 [HashMap And Hash Functions](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DSAConcepts/src/com/hashmapandhashfunctions)
 
 ### 🗓 Day 3 – Sorting Algorithms
@@ -61,7 +61,7 @@ BridgeLabz-Training/
 - Committed and pushed all work.
 
 🔗 **Code Link:**  
-👉 [Sorting Algorithms](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/gcr-codebase/DSAConcepts/src/com/sorting)
+👉 [Sorting Algorithms](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DSAConcepts/src/com/sorting)
 
 ### 🗓 Day 4 – Linear and Binary Search
 **(Date: 07-Jan-2026)**
@@ -97,11 +97,6 @@ BridgeLabz-Training/
 - Covered tree basics & terminologies
 - Studied tree traversals and their applications
 - Learned BST operations with time complexity analysis
-- Practiced tree-based problems and real-world scenarios
-- Committed and pushed all work.
-
-🔗 **Code Link:**  
-👉 [Trees](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DSAConcepts/src/com/trees)
 
 ---
 ## 🧩 Section B : Scenario-Based Problems Progress
