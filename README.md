@@ -48,9 +48,7 @@ BridgeLabz-Training/
 |    |                └── 📁 objectmodeling/    # Diagrams, relationships, communication
 |    |                └── 📁 inheritance/       # Types, method overriding, & access modifiers
 |    |                └── 📁 encapsulation/     # Encapsulation concept, data hiding, getters & setters
-|    ├── 📁 leet-code-codebase/                 # LeetCode solutions
 │    └── 📁 scenario-based-codebase/            # Real-world problems
-|
 |
 └── 📁 dsa-practice/
 │   └── 📁 gcr-codebase/
@@ -62,9 +60,16 @@ BridgeLabz-Training/
 │   │               └── 📁 hashmapandhashfunctions/    # Key-Value pairs
 |   |               └── 📁 linearandbinarysearch/      # Concepts of linear and binary Search
 |   |               └── 📁 runtimeanalysis/            # Time complexity concepts & comparison
+|   |               └── 📁 trees/                      # Tree traversal,Hierarchical non-linear structure
 │   ├── 📁 leet-code-codebase/                         # LeetCode solutions
 │   └── 📁 scenario-based-codebase/                    # Real-world problems
 |
+└── 📁 java-collections-practice/
+│   └── 📁 gcr-codebase/
+│   │  └── 📁 JavaCollectionsConcepts/
+│   │       └── 📁 src/
+│   │           └── 📁 com/
+│   │               ├── 📁 generics/                   # Generic classes, methods type parameters, bounded types
 └── README.md
 
 ```
@@ -88,23 +93,23 @@ Learning Milestones
 
 | Day | Date   | Topic                           | Coverage                                              |
 |----:|--------|---------------------------------|-------------------------------------------------------|
-| 9   | 26-Dec | OOP Basics                      | Procedural vs OOP, fundamentals                       |
-| 10  | 27-Dec | Constructors & Static Concepts  | Constructors, access modifiers, static                |
-| 11  | 29-Dec | this, final, static             | Keywords, instance vs class members                   |
-| 12  | 30-Dec | Object Modeling                 | Diagrams, relationships, communication                |
-| 13  | 31-Dec | Inheritance & Types             | Types, method overriding, & modifiers                 |
-| 14  | 01-Jan | Encapsulation                   | Encapsulation concept, data hiding, getters & setters |
+| 1   | 26-Dec | OOP Basics                      | Procedural vs OOP, fundamentals                       |
+| 2   | 27-Dec | Constructors & Static Concepts  | Constructors, access modifiers, static                |
+| 3   | 29-Dec | this, final, static             | Keywords, instance vs class members                   |
+| 4   | 30-Dec | Object Modeling                 | Diagrams, relationships, communication                |
+| 5   | 31-Dec | Inheritance & Types             | Types, method overriding, & modifiers                 |
+| 6   | 01-Jan | Encapsulation                   | Encapsulation concept, data hiding, getters & setters |
 
 ---
 ### **Week 3 : Data Structures & Algorithms**
 
 | Day |     Date    | Topic                          | Coverage                               |
 |-----|-------------|--------------------------------|----------------------------------------|
-|  15 | 02-Jan      | DSA Basics & LinkedList        | DSA concepts, LinkedList and its types |
-|  16 | 03-Jan      | Stack, Queue & HashMap         | Core operations and basic use cases    |
-|  17 | 05-Jan      | Sorting Algorithms             | Sorting algorithms & comparison logic  |
-|  19 | 07-jan      | linear and binary Search       | Concepts of linear and binary Search   |
-|  21 | 09-jan      | Runtime Analysis               | Time complexity concepts & comparison  |
+|  1  | 02-Jan      | DSA Basics & LinkedList        | DSA concepts, LinkedList and its types |
+|  2  | 03-Jan      | Stack, Queue & HashMap         | Core operations and basic use cases    |
+|  3  | 05-Jan      | Sorting Algorithms             | Sorting algorithms & comparison logic  |
+|  4  | 07-jan      | linear and binary Search       | Concepts of linear and binary Search   |
+|  5  | 09-jan      | Runtime Analysis               | Time complexity concepts & comparison  |
 ---
 Key Concepts Covered
 
@@ -138,6 +143,9 @@ Key Concepts Covered
 - Runtime Analysis: Understanding how different algorithms have different time complexity as input size increases
 
 ---
+### Collections Framework (java-collections-practice)
+- Generics: Type-safe collections, generic classes and methods, type parameters, bounded types, wildcards, type erasure.
+---
 🔗 Quick Links
 ## core-java-practice
 
@@ -161,7 +169,7 @@ Key Concepts Covered
 - 📌 [Object Modeling](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/objectmodeling)
 - 📌 [Inheritance & Types](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/inheritance) 
 - 📌 [Encapsulation](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/encapsulation)
-- 📌 [Scenario-Based Solutions](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/oops_scenario_based/src/com)
+- 📌 [Scenario-Based Solutions](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/oops_scenario_based/src/com) 
 
  ---
 
@@ -174,6 +182,11 @@ dsa-practice:
 - 📌 [Runtime Analysis](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DSAConcepts/src/com/runtimeanalysis)
 - 📌 [Scenario-Based Solutions](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based-codebase/dsa_scenario_based/src/com)
   
+---
+
+java-collections-practice:
+📌 [Generics](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcepts/src/com/generics)
+
 ---
 
 🎓 Learnings & Best Practices
