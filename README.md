@@ -20,6 +20,10 @@ Week 2 : Object-Oriented Programming
 🔹dsa-practice
 Week 3 : Data Structure and Algorithm
 
+🔹java-collections-practice
+Week 4 : Collections
+
+
 ---
 📂 Project Structure
 ```
@@ -70,6 +74,7 @@ BridgeLabz-Training/
 │   │       └── 📁 src/
 │   │           └── 📁 com/
 │   │               ├── 📁 generics/                   # Generic classes, methods type parameters, bounded types
+|   |               ├── 📁 interfaces/                 # Java Collections Framework concepts including List, Set, Map, and Queue
 └── README.md
 
 ```
@@ -77,41 +82,51 @@ Learning Milestones
 ## Week 1 : Core Java Programming
 
 | Day | Date   | Topic                          | Coverage                                     |
-|----:|--------|--------------------------------|----------------------------------------------|
-| 1   | 15-Dec | Git & GitHub Setup             | Repository setup, Git workflow               |
-| 2   | 16-Dec | Java Basics                    | Basic syntax, prerequisites                  |
-| 3   | 17-Dec | Programming Elements           | Data types, operators, input handling        |
-| 4   | 18-Dec | Control Flow                   | Conditions, loops, logical problems          |
-| 5   | 19-Dec | Arrays                         | 1D & 2D arrays, traversal                    |
-| 6   | 20-Dec | Methods                        | Method declaration, parameters               |
-| 7   | 22-Dec | Strings                        | String creation, methods                     |
-| 8   | 23-Dec | Built-in Functions & Exceptions| Math, Random, Date-Time, exceptions          |
-
----
+|-----|--------|--------------------------------|----------------------------------------------|
+|  1  | 15-Dec | Git & GitHub Setup             | Repository setup, Git workflow               |
+|  2  | 16-Dec | Java Basics                    | Basic syntax, prerequisites                  |
+|  3  | 17-Dec | Programming Elements           | Data types, operators, input handling        |
+|  4  | 18-Dec | Control Flow                   | Conditions, loops, logical problems          |
+|  5  | 19-Dec | Arrays                         | 1D & 2D arrays, traversal                    |
+|  6  | 20-Dec | Methods                        | Method declaration, parameters               |
+|  7  | 22-Dec | Strings                        | String creation, methods                     |
+|  8  | 23-Dec | Extras                         | Math, Random, Date-Time, exceptions          |
 
 ## Week 2 : Object-Oriented Programming
 
 | Day | Date   | Topic                           | Coverage                                              |
-|----:|--------|---------------------------------|-------------------------------------------------------|
-| 1   | 26-Dec | OOP Basics                      | Procedural vs OOP, fundamentals                       |
-| 2   | 27-Dec | Constructors & Static Concepts  | Constructors, access modifiers, static                |
-| 3   | 29-Dec | this, final, static             | Keywords, instance vs class members                   |
-| 4   | 30-Dec | Object Modeling                 | Diagrams, relationships, communication                |
-| 5   | 31-Dec | Inheritance & Types             | Types, method overriding, & modifiers                 |
-| 6   | 01-Jan | Encapsulation                   | Encapsulation concept, data hiding, getters & setters |
+|-----|--------|---------------------------------|-------------------------------------------------------|
+|  1  | 26-Dec | OOP Basics                      | Procedural vs OOP, fundamentals                       |
+|  2  | 27-Dec | Constructors & Static Concepts  | Constructors, access modifiers, static                |
+|  3  | 29-Dec | this, final, static             | Keywords, instance vs class members                   |
+|  4  | 30-Dec | Object Modeling                 | Diagrams, relationships, communication                |
+|  5  | 31-Dec | Inheritance & Types             | Types, method overriding, & modifiers                 |
+|  6  | 01-Jan | Encapsulation                   | Encapsulation concept, data hiding, getters & setters |
 
----
 ### **Week 3 : Data Structures & Algorithms**
 
-| Day |     Date    | Topic                          | Coverage                               |
-|-----|-------------|--------------------------------|----------------------------------------|
-|  1  | 02-Jan      | DSA Basics & LinkedList        | DSA concepts, LinkedList and its types |
-|  2  | 03-Jan      | Stack, Queue & HashMap         | Core operations and basic use cases    |
-|  3  | 05-Jan      | Sorting Algorithms             | Sorting algorithms & comparison logic  |
-|  4  | 07-jan      | linear and binary Search       | Concepts of linear and binary Search   |
-|  5  | 09-jan      | Runtime Analysis               | Time complexity concepts & comparison  |
+| Day |Date    | Topic                           | Coverage                                         |
+|-----|--------|---------------------------------|--------------------------------------------------|
+|  1  | 02-Jan | DSA Basics & LinkedList         | DSA concepts, LinkedList and its types           |
+|  2  | 03-Jan | Stack, Queue & HashMap          | Core operations and basic use cases              |
+|  3  | 05-Jan | Sorting Algorithms              | Sorting algorithms & comparison logic            |
+|  4  | 07-jan | linear and binary Search        | Concepts of linear and binary Search             |
+|  5  | 09-jan | Runtime Analysis                | Time complexity concepts & comparison            |
+|  8  | 13-jan | Trees                           | Tree traversal,Hierarchical non-linear structure |
+
 ---
+
+### **Week 4 : Collections**
+
+| Day |Date    | Topic                           | Coverage                                                                |
+|-----|--------|---------------------------------|-------------------------------------------------------------------------|
+|  1  | 16-Jan | Generics                        | Generic classes, methods, type parameters, bounded types                |
+|  2  | 17-Jan | Interfaces                      | Java Collections Framework concepts including List, Set, Map, and Queue |
+
+---
+
 Key Concepts Covered
+---
 
 ### Core Java (core-java-practice)
  - Fundamentals: Variables, data types, operators
@@ -130,22 +145,25 @@ Key Concepts Covered
  - Inheritance: Parent and Chlid relations
 
 ---
-
 ### Data Structures & Algorithms (dsa-practice)
-- DSA Fundamentals: Time & space complexity, basic problem analysis
-- Linked Lists: Singly, doubly, and circular linked lists
-- Stacks: LIFO principle, push/pop operations, stack applications
-- Queues: FIFO principle, enqueue/dequeue operations, queue variants
-- HashMaps: Key-value storage, hashing concept, basic operations
-- Sorting: Basic sorting algorithms and comparison-based sorting concepts
+- DSA Fundamentals: Time & space complexity, basic problem analysis.
+- Linked Lists: Singly, doubly, and circular linked lists.
+- Stacks: LIFO principle, push/pop operations, stack applications.
+- Queues: FIFO principle, enqueue/dequeue operations, queue variants.
+- HashMaps: Key-value storage, hashing concept, basic operations.
+- Sorting: Basic sorting algorithms and comparison-based sorting concepts.
 - Linear Search: Simple sequential search that scans each element one-by-one to find a target.
 - Binary Search: Fast search on sorted data that repeatedly halves the search range to locate a target.
-- Runtime Analysis: Understanding how different algorithms have different time complexity as input size increases
+- Runtime Analysis: Time complexity concepts & comparison.
+- Trees: Hierarchical data structure used for organized storage, traversal, and efficient searching operations.
 
 ---
 ### Collections Framework (java-collections-practice)
 - Generics: Type-safe collections, generic classes and methods, type parameters, bounded types, wildcards, type erasure.
+- Interfaces: Java Collections Framework concepts including List, Set, Map, and Queue Interfaces.
+  
 ---
+
 🔗 Quick Links
 ## core-java-practice
 
@@ -185,7 +203,8 @@ dsa-practice:
 ---
 
 java-collections-practice:
-📌 [Generics](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcepts/src/com/generics)
+- 📌 [Generics](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcepts/src/com/generics)
+- 📌 [Interfaces](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcepts/src/com/interfaces)
 
 ---
 
