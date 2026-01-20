@@ -45,7 +45,7 @@ public class Main {
                     break;
 
                 case 2:
-                    System.out.println("\nUpcoming Shows (Sorted by Time):");
+                    System.out.println("\nUpcoming Shows:");
                     ShowSorter.display(shows, count);
                     break;
 
