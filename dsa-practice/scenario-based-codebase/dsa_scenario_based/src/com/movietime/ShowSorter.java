@@ -17,7 +17,7 @@ public class ShowSorter {
             shows[j + 1] = key;
         }
     }
-
+ 
     public static void display(Show[] shows, int size) {
         if (size == 0) {
             System.out.println("No shows available.");
