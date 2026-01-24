@@ -13,7 +13,7 @@ public class ListRotator {
         Collections.rotate(list, k);
     }
 
-    public static void main(String[] args) {
+    public static void main (String[] args) {
         List<Integer> nums = new ArrayList<>(List.of(10, 20, 30, 40, 50));
         
         System.out.println("Before : " + nums);
@@ -24,4 +24,6 @@ public class ListRotator {
         rotate(nums, 3);
         System.out.println("After rotate 3  : " + nums);
     }
+
+	
 }
