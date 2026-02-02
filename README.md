@@ -125,3 +125,78 @@ BridgeLabz-Training/
 👉 [Exception Handling](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcepts/src/com/exceptionhandling)
 
 ---
+
+## 🗓 Day 5 – Regex & JUnit  
+**Date: 21-Jan-2026**
+
+
+- ### Regex
+  - Pattern and Matcher usage.
+  - Character classes, quantifiers, and groups.
+  - Input validation (email, phone, password, username).
+  - Data extraction and string replacement.
+
+- ### JUnit
+  - Writing test cases using `@Test`.
+  - Assertions: `assertEquals`, `assertTrue`, `assertFalse`, `assertThrows`.
+  - Testing positive and negative scenarios.
+  - Exception testing and test structure.
+
+- Effective input validation using Regex.
+- Importance of unit testing.
+- Improved code reliability and maintainability.
+- All practice completed, committed, and pushed .
+
+🔗 **Code Link:**       
+👉 [Regex](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcepts/src/com/regex)    
+👉 [JUnit](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcepts/src/com/junit)
+
+---
+
+## 🗓 Day 6 – Annotations & Reflection  
+**Date: 22-Jan-2026**
+
+- Studied Java Annotations and their purpose.
+- Annotations:
+  - Built-in annotations: `@Override`, `@Deprecated`, `@SuppressWarnings`.
+  - Meta-annotations: `@Retention`, `@Target`.
+  - Created custom annotations.
+- Learned Reflection API:
+  - Accessing class metadata at runtime.
+  - Reading fields, methods, and constructors.
+  - Invoking methods dynamically.
+- Practiced:
+  - Using reflection with custom annotations.
+  - Runtime inspection and dynamic behavior.
+- Understood use cases in frameworks (Spring, Hibernate, JUnit).
+- All practice work completed, committed, and pushed. 
+
+🔗 **Code Link:**       
+👉 [Annotations](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcepts/src/com/annotation)  
+👉 [Reflection](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcepts/src/com/reflection)
+
+---
+
+## 🧩 Section B : Scenario-Based Problems Progress
+
+### 🗓 Day 7 – Scenario-Based Practice  
+**(Date: 23-Jan-2026)**
+- Solved **5** scenario-based problems.
+- Focused on logical thinking and real-world problem solving.
+- Committed and pushed all solutions.
+  
+🔗 **Code Links:**       
+👉 [Scenario Based Problems](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/scenario-based-codebase/collections_scenario_based/src/com)
+
+---
+
+### 🗓 Day 8 – Scenario-Based Practice  
+**(Date: 24-Jan-2026)**
+- Solved **5** scenario-based problems.
+- Focused on logical thinking and real-world problem solving.
+- Committed and pushed all solutions.
+  
+🔗 **Code Links:**       
+👉 [Scenario Based Problems](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/scenario-based-codebase/collections_scenario_based/src/com)
+
+---
