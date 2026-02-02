@@ -1,0 +1,12 @@
+{
+  "id": 101,
+  "name": "Aryan Borkar",
+  "email": "aryan@gmail.com",
+  "age": 23,
+  "skills": ["Java", "Spring", "JSON"],
+  "active": true,
+  "address": {
+    "city": "Bhopal",
+    "country": "India"
+  }
+}
