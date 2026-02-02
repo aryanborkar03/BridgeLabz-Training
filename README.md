@@ -1,6 +1,6 @@
 # BridgeLabz-Training
 ---
-A comprehensive Java programming training repository covering Core Java fundamentals to Object-Oriented Programming concepts.
+A comprehensive Java programming training repository covering Core Java fundamentals, Object-Oriented Programming, DSA, Collections, IO Streams and Java 8 concepts.
 
 
 Training Overview 
@@ -23,6 +23,11 @@ Week 3 : Data Structure and Algorithm
 🔹java-collections-practice
 Week 4 : Collections
 
+🔹 java-iostreams-practice
+Week 5 : IO Streams
+
+🔹 java8-programming-practice
+Week 6 : Java 8 Features
 
 ---
 📂 Project Structure
@@ -75,6 +80,36 @@ BridgeLabz-Training/
 │   │           └── 📁 com/
 │   │               ├── 📁 generics/                   # Generic classes, methods type parameters, bounded types
 |   |               ├── 📁 interfaces/                 # Java Collections Framework concepts including List, Set, Map, and Queue
+|   |               ├── 📁 streams/                    # Stream creation, intermediate operations, terminal operations
+|   |               ├── 📁 exceptionhandling/          # Handled checked and unchecked exceptions, custom exceptions, catch blocks
+|   |               ├── 📁 regex/                      # Pattern matching and input validation using Pattern and Matcher
+|   |               ├── 📁 junit/                      # Unit testing with JUnit 5 using assertions and annotations.
+|   |               ├── 📁 annotations/                # Used built-in/custom annotations
+|   |               ├── 📁 reflection/                 # API to inspect classes, methods, and fields
+|   |               
+│   └── 📁 scenario-based-codebase/                    # Real-world problems
+|   
+└── 📁 java-iostreams-practice/
+│   └── 📁 gcr-codebase/
+|   |   └── 📁 IOStreamsConcepts/
+|   |       └── 📁 src/
+|   |           └── 📁 com/
+|   |               ├── 📁 csv/                        # Read, wrote, and processed CSV files using Java I/O with parsing and data handling.
+|   |               ├── 📁 json/                       # Read, wrote, and generated JSON data using libraries, handling object mapping
+|   
+│── 📁 java8-programming-practice/
+│ 	 └── 📁 gcr-codebase/
+|   |   └── 📁  Java8Concepts/
+|   |       └── 📁  src/
+|   |           └── 📁  com/
+|   |               ├── 📁 lambdaexpression/           # Lambda expressions for concise functional programming and reduced boilerplate code in Java.
+|   |               ├── 📁 interfaces/                 # Functional Interfaces enabling lambda expressions through single abstract method contracts in Java.
+|   |               ├── 📁 methodreferences/           # Method references for reusing existing methods as lambda expressions in a concise form.
+|   |               ├── 📁 collectors/                 # Transforming, grouping, partitioning, and aggregating stream results efficiently.
+|   |               ├── 📁 streamapi/                  # Functional-style data processing using intermediate and terminal operations.
+|   |               ├── 📁 foreachmethod/              # forEach for performing actions on each element of a collection or stream.
+|   |               ├── 📁 smartcitymanagementsystem/  # Mini-project using streams and collectors 
+|   |            
 └── README.md
 
 ```
@@ -118,10 +153,33 @@ Learning Milestones
 
 ### **Week 4 : Collections**
 
-| Day |Date    | Topic                           | Coverage                                                                |
-|-----|--------|---------------------------------|-------------------------------------------------------------------------|
-|  1  | 16-Jan | Generics                        | Generic classes, methods, type parameters, bounded types                |
-|  2  | 17-Jan | Interfaces                      | Java Collections Framework concepts including List, Set, Map, and Queue |
+| Day |Date    | Topic                           | Coverage                                                                                  |
+|-----|--------|---------------------------------|-------------------------------------------------------------------------------------------|
+|  1  | 16-Jan | Generics                        | Generic classes, methods, type parameters, bounded types                                  |
+|  2  | 17-Jan | Interfaces                      | Java Collections Framework concepts including List, Set, Map, and Queue                   |
+|  3  | 19-Jan | Streams                         | Stream creation, intermediate operations, terminal operations                             |
+|  4  | 20-Jan | Exception Handling              | Handled checked and unchecked exceptions, custom exceptions, catch blocks                 |
+|  5  | 21-jan | Regex and Junit                 | Pattern matching and input validation,JUnit 5 using assertions and annotations            |
+|  6  | 22-jan | Annotations & Reflection        | Used built-in/custom annotations & reflection API to inspect classes, methods, and fields |
+
+
+---
+
+### **Week 5 : IO Streams**
+
+| Day |Date    | Topic         | Coverage                                                                                  | 
+|-----|--------|---------------|-------------------------------------------------------------------------------------------|
+|  1  | 23-Jan | CSV           | Read, wrote, and processed CSV files using Java I/O with parsing and data handling        |
+|  2  | 24-Jan | JSON          | Read, wrote, and generated JSON data using libraries, handling object mapping             |
+
+---
+
+### **Week 6 : Java 8 Features**
+
+| Day |Date    | Topic                                       | Coverage                                                               | 
+|-----|--------|---------------------------------------------|------------------------------------------------------------------------|
+|  1  | 27-Jan | Lambda Expression and Functional Interfaces | (Predicate, Function, Consumer, Supplier) with practical examples.     |
+|  2  | 28-Jan | Stream Api and Collectors                   | functional-style data processing, filtering, mapping, and aggregation. |
 
 ---
 
@@ -164,6 +222,18 @@ Key Concepts Covered
   
 ---
 
+### IO Streams (java-iostreams-practice)
+- CSV: Read, wrote, and processed CSV files using Java I/O with parsing and data handling
+- JSON: Read, wrote, and generated JSON data using libraries, handling object mapping
+
+---
+
+### Java 8 Features(java8-programming-practice)
+- Lambda Expression: Lambda expressions for concise functional programming and reduced boilerplate code in Java.
+- Functional Interfaces: Functional Interfaces enabling lambda expressions through single abstract method contracts in Java.
+- Stream API: Functional-style data processing using intermediate and terminal operations.
+- Collectors: Transforming, grouping, partitioning, and aggregating stream results efficiently.
+
 🔗 Quick Links
 ## core-java-practice
 
@@ -205,6 +275,30 @@ dsa-practice:
 java-collections-practice:
 - 📌 [Generics](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcepts/src/com/generics)
 - 📌 [Interfaces](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcepts/src/com/interfaces)
+- 📌 [Streams](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcepts/src/com/streams)
+- 📌 [Exception Handling](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcepts/src/com/exceptionhandling)
+- 📌 [Regex](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcepts/src/com/regex)
+- 📌 [JUnit](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcepts/src/com/junit)
+- 📌 [Annotations](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcepts/src/com/annotation)  
+- 📌 [Reflection](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcepts/src/com/reflection)
+- 📌 [Scenario Based Problems](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/scenario-based-codebase/collections_scenario_based/src/com)
+
+---
+
+java-iostreams-practice
+- 📌 [CSV](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-iostreams-practice/java-iostreams-practice/gcr-codebase/IOStreamsConcepts/src/com/csv)
+- 📌 [JSON](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-iostreams-practice/java-iostreams-practice/gcr-codebase/IOStreamsConcepts/src/com/json)
+
+---
+
+java8-programming-practice
+- 📌 [Lambda Expression](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8Concepts/src/com/lambdaexpression)
+- 📌 [Functional Interface](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8Concepts/src/com/interfaces)
+- 📌 [Method References](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8Concepts/src/com/methodreferences)
+- 📌 [Stream Api](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8Concepts/src/com/streamapi)     
+- 📌 [For-Each Method](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8Concepts/src/com/foreachmethod)       
+- 📌 [Collectors](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8Concepts/src/com/collectors)      
+- 📌 [Smart City Management System](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8Concepts/src/com/smartcitymanagementsystem)
 
 ---
 
