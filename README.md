@@ -16,6 +16,12 @@ BridgeLabz-Training/
 |   |           └── com/
 |   |               └── generics/
 |   |               └── interfaces/
+|   |               └── streams/
+|   |               └── exceptionhandling/
+|   |               └── regex/
+|   |               └── junit/
+|   |               └── annotation/
+|   |               └── reflection/
 |   |
 └── README.md
 ```
@@ -27,7 +33,7 @@ BridgeLabz-Training/
 - Followed Generics best practices (no raw types, safe bounds, readable design)
  
 🔗 **Code Link:**      
-👉 [Generics](https://github.com/Anuj-Vishwakarma94/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcepts/src/com/generics)
+👉 [Generics](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcepts/src/com/generics)
 
 ---
 
@@ -56,5 +62,66 @@ BridgeLabz-Training/
 
 🔗 **Code Link:**       
 👉 [Interfaces](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcepts/src/com/interfaces)
+
+---
+
+### 🗓 Day 3 – Streams
+**Date: 19-Jan-2026**
+- Practiced Java I/O Streams and file handling concepts.
+- File Handling:
+  - Read and write text files using FileInputStream and FileOutputStream.
+  - Handled missing file scenarios with IOException.
+- Buffered Streams:
+  - Copied large files using BufferedInputStream and BufferedOutputStream.
+  - Compared performance with unbuffered streams using System.nanoTime().
+- Console Input:
+  - Read user input using BufferedReader.
+  - Stored input data into file using FileWriter.
+- Serialization:
+  - Serialized and deserialized Employee objects using Object streams.
+- ByteArray Streams:
+  - Converted image to byte array and recreated image file.
+- Filter Streams:
+  - Converted uppercase text to lowercase using BufferedReader and BufferedWriter.
+- Data Streams: 
+  - Stored and retrieved primitive data using DataInputStream and DataOutputStream.
+- Piped Streams:
+  - Implemented inter-thread communication using Piped streams.
+- Large File Processing:
+  - Read large files line by line and filtered error logs.
+- Word Count:
+  - Counted words and displayed top 5 frequent words using HashMap.
+  - Understood use cases, performance, and real-world applications.
+- All work committed and pushed.
+
+🔗 **Code Link:**       
+👉 [Streams](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcepts/src/com/streams)
+
+---
+
+## 🗓 Day 4 – Exception Handling  
+**Date: 20-Jan-2026**
+
+- **Checked Exception**
+  - Handled `IOException` while reading a file.
+- **Unchecked Exception**
+  - Managed `ArithmeticException` and `InputMismatchException` during division.
+- **Custom Exception**
+  - Created and used `InvalidAgeException`.
+- **Multiple Catch Blocks**
+  - Handled `ArrayIndexOutOfBoundsException` and `NullPointerException`.
+- **try-with-resources**
+  - Used auto-closing resources with `BufferedReader`.
+- **throw vs throws**
+  - Validated input and propagated exceptions to caller.
+- **finally Block**
+  - Ensured execution of cleanup code.
+- **Exception Propagation**
+  - Observed exception flow across multiple methods.
+- **Nested try-catch**
+  - Managed array access and division errors.
+
+🔗 **Code Link:**       
+👉 [Exception Handling](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionsConcepts/src/com/exceptionhandling)
 
 ---
