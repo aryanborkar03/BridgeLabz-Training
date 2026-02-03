@@ -1,6 +1,6 @@
 # BridgeLabz-Training
 ---
-A comprehensive Java programming training repository covering Core Java fundamentals, Object-Oriented Programming, DSA, Collections, IO Streams and Java 8 concepts.
+A comprehensive Java programming training repository covering Core Java fundamentals, Object-Oriented Programming, DSA, Collections, IO Streams, Java 8 concepts and Java Design and Pattern.
 
 
 Training Overview 
@@ -29,8 +29,10 @@ Week 5 : IO Streams
 🔹 java8-programming-practice
 Week 6 : Java 8 Features
 
+🔹 java-design-pattern-practice
+Week 7 : Java Design and Pattern 
+
 ---
-📂 Project Structure
 ```
 BridgeLabz-Training/
 │
@@ -99,9 +101,9 @@ BridgeLabz-Training/
 |   
 │── 📁 java8-programming-practice/
 │ 	 └── 📁 gcr-codebase/
-|   |   └── 📁  Java8Concepts/
-|   |       └── 📁  src/
-|   |           └── 📁  com/
+|   |   └── 📁 Java8Concepts/
+|   |       └── 📁 src/
+|   |           └── 📁 com/
 |   |               ├── 📁 lambdaexpression/           # Lambda expressions for concise functional programming and reduced boilerplate code in Java.
 |   |               ├── 📁 interfaces/                 # Functional Interfaces enabling lambda expressions through single abstract method contracts in Java.
 |   |               ├── 📁 methodreferences/           # Method references for reusing existing methods as lambda expressions in a concise form.
@@ -109,7 +111,14 @@ BridgeLabz-Training/
 |   |               ├── 📁 streamapi/                  # Functional-style data processing using intermediate and terminal operations.
 |   |               ├── 📁 foreachmethod/              # forEach for performing actions on each element of a collection or stream.
 |   |               ├── 📁 smartcitymanagementsystem/  # Mini-project using streams and collectors 
-|   |            
+|   |
+│── 📁 java-design-pattern-practice/
+│ 	 └── 📁 gcr-codebase/
+|   |   └──📁 DesignPatternConcepts/
+|   |       └──📁 src/
+|   |           └──📁 com/
+|   |               └── 📁 smartuniversitylibrarymanagementsystem/    #Smart University Library Management System designed using GoF patterns (Singleton, Factory, Observer, Builder).
+|   |           
 └── README.md
 
 ```
@@ -181,6 +190,13 @@ Learning Milestones
 |  1  | 27-Jan | Lambda Expression and Functional Interfaces | (Predicate, Function, Consumer, Supplier) with practical examples.     |
 |  2  | 28-Jan | Stream Api and Collectors                   | functional-style data processing, filtering, mapping, and aggregation. |
 
+
+### **Week 7 : Java Design and Pattern**
+
+| Day |Date    | Topic                                                          | Coverage                                                                   | 
+|-----|--------|----------------------------------------------------------------|----------------------------------------------------------------------------|
+|  1  | 31-Jan | Smart University Library Management System (Design & Patterns) |Used For building scalable, maintainable, and loosely coupled applications. |
+
 ---
 
 Key Concepts Covered
@@ -233,6 +249,9 @@ Key Concepts Covered
 - Functional Interfaces: Functional Interfaces enabling lambda expressions through single abstract method contracts in Java.
 - Stream API: Functional-style data processing using intermediate and terminal operations.
 - Collectors: Transforming, grouping, partitioning, and aggregating stream results efficiently.
+
+### Java Design and Pattern(java-design-pattern-practice)
+-Java Design & pattern: Java design and design patterns for building scalable, maintainable, and loosely coupled applications. 
 
 🔗 Quick Links
 ## core-java-practice
@@ -299,6 +318,11 @@ java8-programming-practice
 - 📌 [For-Each Method](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8Concepts/src/com/foreachmethod)       
 - 📌 [Collectors](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8Concepts/src/com/collectors)      
 - 📌 [Smart City Management System](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8Concepts/src/com/smartcitymanagementsystem)
+
+---
+
+java-design-pattern-practice
+- 📌[Smart University Library Management System](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-design-pattern-practice/java-design-pattern-practice/gcr-codebase/DesignPatternConcepts/src/com/smartuniversitylibrarymanagementsystem)
 
 ---
 
