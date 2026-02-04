@@ -20,7 +20,7 @@ public class BrickTransport extends GoodsTransport {
         else
             return "MonsterLorry";
     }
-
+ 
     public float calculateTotalCharge() {
         float price = brickPrice * brickQuantity;
         float tax = price * 0.3f;
