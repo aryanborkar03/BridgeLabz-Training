@@ -15,7 +15,7 @@ public class Utility {
             return null;
         }
 
-        String date = data[1];
+        String date = data[1]; 
         int rating = Integer.parseInt(data[2]);
         String type = data[3];
 
