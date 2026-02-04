@@ -49,7 +49,7 @@ public class TimberTransport extends GoodsTransport {
     public String getTimberType() {
         return timberType;
     }
-
+ 
     public float getTimberPrice() {
         return timberPrice;
     }
