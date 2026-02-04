@@ -10,7 +10,7 @@ public class UserInterface {
 
         GoodsTransport gt = Utility.parseDetails(input);
         if (gt == null)
-            return;
+            return; 
 
         System.out.println("Transporter id : " + gt.getTransportId());
         System.out.println("Date of transport : " + gt.getTransportDate());
