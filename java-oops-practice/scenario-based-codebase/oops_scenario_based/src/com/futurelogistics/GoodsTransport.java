@@ -22,7 +22,7 @@ public abstract class GoodsTransport {
     public String getTransportDate() {
         return transportDate;
     }
-    
+     
     
     public void  setTransportDate(String transportDate)
     {
