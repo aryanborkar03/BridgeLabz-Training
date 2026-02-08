@@ -250,8 +250,13 @@ Key Concepts Covered
 - Stream API: Functional-style data processing using intermediate and terminal operations.
 - Collectors: Transforming, grouping, partitioning, and aggregating stream results efficiently.
 
+---
+
 ### Java Design and Pattern(java-design-pattern-practice)
--Java Design & pattern: Java design and design patterns for building scalable, maintainable, and loosely coupled applications. 
+- Java Design & pattern: Java design and design patterns for building scalable, maintainable, and loosely coupled applications.
+- Multi-Threading: Multithreading concepts including thread creation, lifecycle, synchronization, and thread safety in Java.
+
+---
 
 🔗 Quick Links
 ## core-java-practice
@@ -323,6 +328,8 @@ java8-programming-practice
 
 java-design-pattern-practice
 - 📌[Smart University Library Management System](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-design-pattern-practice/java-design-pattern-practice/gcr-codebase/DesignPatternConcepts/src/com/smartuniversitylibrarymanagementsystem)
+- - 📌[MultiThreading](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-design-pattern-practice/java-design-pattern-practice/gcr-codebase/DesignPatternConcepts/src/com/multithreading)
+
 
 ---
 
