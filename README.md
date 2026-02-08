@@ -285,7 +285,7 @@ Key Concepts Covered
 
  ---
 
-dsa-practice:
+## dsa-practice:
 - 📌 [Linked Lists](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DSAConcepts/src/com/linkedlist)
 - 📌 [Stack And Queue](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DSAConcepts/src/com/stacksandqueues)
 - 📌 [HashMaps And Hash Functions](https://github.com/aryanborkar03/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/DSAConcepts/src/com/hashmapandhashfunctions)
@@ -309,13 +309,13 @@ java-collections-practice:
 
 ---
 
-java-iostreams-practice
+## java-iostreams-practice
 - 📌 [CSV](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-iostreams-practice/java-iostreams-practice/gcr-codebase/IOStreamsConcepts/src/com/csv)
 - 📌 [JSON](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-iostreams-practice/java-iostreams-practice/gcr-codebase/IOStreamsConcepts/src/com/json)
 
 ---
 
-java8-programming-practice
+## java8-programming-practice
 - 📌 [Lambda Expression](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8Concepts/src/com/lambdaexpression)
 - 📌 [Functional Interface](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8Concepts/src/com/interfaces)
 - 📌 [Method References](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8Concepts/src/com/methodreferences)
@@ -326,7 +326,7 @@ java8-programming-practice
 
 ---
 
-java-design-pattern-practice
+## java-design-pattern-practice
 - 📌[Smart University Library Management System](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-design-pattern-practice/java-design-pattern-practice/gcr-codebase/DesignPatternConcepts/src/com/smartuniversitylibrarymanagementsystem)
 - - 📌[MultiThreading](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-design-pattern-practice/java-design-pattern-practice/gcr-codebase/DesignPatternConcepts/src/com/multithreading)
 
