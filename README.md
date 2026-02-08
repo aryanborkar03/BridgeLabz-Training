@@ -328,7 +328,7 @@ java-collections-practice:
 
 ## java-design-pattern-practice
 - 📌[Smart University Library Management System](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-design-pattern-practice/java-design-pattern-practice/gcr-codebase/DesignPatternConcepts/src/com/smartuniversitylibrarymanagementsystem)
-- - 📌[MultiThreading](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-design-pattern-practice/java-design-pattern-practice/gcr-codebase/DesignPatternConcepts/src/com/multithreading)
+-  📌[MultiThreading](https://github.com/aryanborkar03/BridgeLabz-Training/tree/java-design-pattern-practice/java-design-pattern-practice/gcr-codebase/DesignPatternConcepts/src/com/multithreading)
 
 
 ---
