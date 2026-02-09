@@ -1,0 +1,234 @@
+-- ============================================
+-- LIBRARY MANAGEMENT SYSTEM
+-- ============================================
+
+
+-- Step 1: Use Database
+USE sqlpractice;
+
+-- Output:
+-- Database changed
+
+
+
+-- ============================================
+-- CREATE TABLES
+-- ============================================
+
+-- Books Table
+
+CREATE TABLE IF NOT EXISTS books (
+    BOOKID INT PRIMARY KEY AUTO_INCREMENT,
+    TITLE VARCHAR(200),
+    AUTHOR VARCHAR(100),
+    GENRE VARCHAR(50),
+    TOTAL_COPIES INT,
+    AVAILABLE_COPIES INT
+);
+
+-- Output:
+-- Query OK, 0 rows affected
+
+
+
+-- Students Table
+
+CREATE TABLE IF NOT EXISTS students (
+    student_id INT PRIMARY KEY AUTO_INCREMENT,
+    student_name VARCHAR(100),
+    email VARCHAR(100)
+);
+
+-- Output:
+-- Query OK, 0 rows affected
+
+
+
+-- Borrow Records Table
+
+CREATE TABLE IF NOT EXISTS borrow_records (
+    record_id INT PRIMARY KEY AUTO_INCREMENT,
+    student_id INT,
+    BOOKID INT,
+    borrow_date DATE,
+    return_date DATE,
+    fine DECIMAL(10,2) DEFAULT 0,
+
+    FOREIGN KEY (student_id) REFERENCES students(student_id),
+    FOREIGN KEY (BOOKID) REFERENCES books(BOOKID)
+);
+
+-- Output:
+-- Query OK, 0 rows affected
+
+
+
+-- ============================================
+-- INSERT BOOK RECORDS
+-- ============================================
+
+INSERT INTO books VALUES
+(101,"Do Epic Shit","Ankur Warikoo","Self Help",50,20),
+(102,"Java Basics","Anuj Jain","Programming",33,20),
+(103,"The Psychology of Money","James Herbert","Self Help",30,12),
+(104,"Quiet","Anuj Sharma","Self Help",66,20),
+(105,"Action Kamen","Miyozaki","Comic",12,2);
+
+-- Output:
+-- Query OK, 5 rows affected
+
+
+
+-- View Books
+
+SELECT * FROM books;
+
+-- Output:
+-- +--------+------------------------+---------------+-------------+--------------+------------------+
+-- | BOOKID | TITLE                  | AUTHOR        | GENRE       | TOTAL_COPIES | AVAILABLE_COPIES |
+-- +--------+------------------------+---------------+-------------+--------------+------------------+
+-- | 101    | Do Epic Shit           | Ankur Warikoo | Self Help   | 50           | 20               |
+-- | 102    | Java Basics            | Anuj Jain     | Programming | 33           | 20               |
+-- | 103    | The Psychology of Money| James Herbert | Self Help   | 30           | 12               |
+-- | 104    | Quiet                  | Anuj Sharma   | Self Help   | 66           | 20               |
+-- | 105    | Action Kamen           | Miyozaki      | Comic       | 12           | 2                |
+-- +--------+------------------------+---------------+-------------+--------------+------------------+
+
+
+
+-- ============================================
+-- INSERT STUDENTS
+-- ============================================
+
+INSERT INTO students (student_name, email)
+VALUES
+('Aakash','aakashraj678@email.com'),
+('Aryan','aryan@email.com'),
+('Mohit','mohit986543@email.com');
+
+-- Output:
+-- Query OK, 3 rows affected
+
+
+
+-- View Students
+
+SELECT * FROM students;
+
+-- Output:
+-- +------------+--------------+------------------------+
+-- | student_id | student_name | email                  |
+-- +------------+--------------+------------------------+
+-- | 1          | Aakash       | aakashraj678@email.com |
+-- | 2          | Aryan        | aryan@email.com        |
+-- | 3          | Mohit        | mohit986543@email.com  |
+-- +------------+--------------+------------------------+
+
+
+
+-- ============================================
+-- BORROW BOOK
+-- ============================================
+
+INSERT INTO borrow_records (student_id, BOOKID, borrow_date)
+VALUES (1, 101, CURDATE());
+
+-- Output:
+-- Query OK, 1 row affected
+
+
+
+-- Reduce Available Copies
+
+UPDATE books
+SET AVAILABLE_COPIES = AVAILABLE_COPIES - 1
+WHERE BOOKID = 101;
+
+-- Output:
+-- Query OK, 1 row affected
+
+
+
+-- ============================================
+-- VIEW BORROW RECORDS
+-- ============================================
+
+SELECT * FROM borrow_records;
+
+-- Output:
+-- +-----------+------------+--------+-------------+-------------+------+
+-- | record_id | student_id | BOOKID | borrow_date | return_date | fine |
+-- +-----------+------------+--------+-------------+-------------+------+
+-- | 1         | 1          | 101    | 2026-02-09  | NULL        | 0.00 |
+-- +-----------+------------+--------+-------------+-------------+------+
+
+
+
+-- ============================================
+-- RETURN BOOK + FINE CALCULATION
+-- ============================================
+
+UPDATE borrow_records
+SET return_date = CURDATE(),
+    fine = CASE
+        WHEN DATEDIFF(CURDATE(), borrow_date) > 7
+        THEN (DATEDIFF(CURDATE(), borrow_date) - 7) * 10
+        ELSE 0
+    END
+WHERE record_id = 1;
+
+-- Output:
+-- Query OK, 1 row affected
+
+
+
+-- Increase Available Copies
+
+UPDATE books
+SET AVAILABLE_COPIES = AVAILABLE_COPIES + 1
+WHERE BOOKID = 101;
+
+-- Output:
+-- Query OK, 1 row affected
+
+
+
+-- ============================================
+-- JOIN REPORT (Issued Books)
+-- ============================================
+
+SELECT
+    br.record_id,
+    s.student_name,
+    b.title,
+    br.borrow_date,
+    br.return_date,
+    br.fine
+FROM borrow_records br
+JOIN students s ON br.student_id = s.student_id
+JOIN books b ON br.BOOKID = b.BOOKID;
+
+-- Output:
+-- +-----------+--------------+--------------+-------------+-------------+------+
+-- | record_id | student_name | title        | borrow_date | return_date | fine |
+-- +-----------+--------------+--------------+-------------+-------------+------+
+-- | 1         | Aakash       | Do Epic Shit | 2026-02-09  | 2026-02-09  | 0.00 |
+-- +-----------+--------------+--------------+-------------+-------------+------+
+
+
+
+-- ============================================
+-- SEARCH BOOK BY TITLE
+-- ============================================
+
+SELECT * FROM books
+WHERE TITLE LIKE "%Epic%";
+
+-- Output:
+-- Shows "Do Epic Shit"
+
+
+
+-- ============================================
+-- END OF LIBRARY MANAGEMENT SYSTEM
+-- ============================================
