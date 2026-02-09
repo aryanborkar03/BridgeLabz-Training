@@ -1,0 +1,199 @@
+-- ============================================
+-- BANK MANAGEMENT SYSTEM
+-- ============================================
+
+
+-- Step 1: Use Database
+USE sqlpractice;
+
+-- Output:
+-- Database changed
+
+
+
+-- Step 2: Create Accounts Table
+CREATE TABLE accounts (
+    accountID INT PRIMARY KEY,
+    accountHOLDER VARCHAR(50),
+    balance DECIMAL(10,2)
+);
+
+-- Output:
+-- Query OK, 0 rows affected
+
+
+
+-- ============================================
+-- INSERT ACCOUNT RECORDS
+-- ============================================
+
+INSERT INTO accounts VALUES
+(101,"Raj Sharma",750000),
+(102,"Mohit Raj",60000),
+(103,"Manoj Saru",990000),
+(104,"Priya Jain",500000),
+(105,"Anuj Sharma",280000),
+(106,"Deepak Pandey",750000);
+
+-- Output:
+-- Query OK, 6 rows affected
+-- Records: 6  Duplicates: 0  Warnings: 0
+
+
+
+-- View Accounts Table
+
+SELECT * FROM accounts;
+
+-- Output:
+-- +-----------+---------------+-----------+
+-- | accountID | accountHOLDER | balance   |
+-- +-----------+---------------+-----------+
+-- |       101 | Raj Sharma    | 750000.00 |
+-- |       102 | Mohit Raj     |  60000.00 |
+-- |       103 | Manoj Saru    | 990000.00 |
+-- |       104 | Priya Jain    | 500000.00 |
+-- |       105 | Anuj Sharma   | 280000.00 |
+-- |       106 | Deepak Pandey | 750000.00 |
+-- +-----------+---------------+-----------+
+
+
+
+-- ============================================
+-- START TRANSACTION (Money Transfer)
+-- ============================================
+
+START TRANSACTION;
+
+-- Output:
+-- Query OK, 0 rows affected
+
+
+
+-- Debit Money from Sender
+
+UPDATE accounts
+SET balance = balance - 5000
+WHERE accountID = 102;
+
+-- Output:
+-- Query OK, 1 row affected
+-- Rows matched: 1  Changed: 1
+
+
+
+-- Credit Money to Receiver
+
+UPDATE accounts
+SET balance = balance + 5000
+WHERE accountID = 103;
+
+-- Output:
+-- Query OK, 1 row affected
+-- Rows matched: 1  Changed: 1
+
+
+
+-- Verify Updated Balances
+
+SELECT * FROM accounts;
+
+-- Output:
+-- +-----------+---------------+-----------+
+-- | accountID | accountHOLDER | balance   |
+-- +-----------+---------------+-----------+
+-- |       101 | Raj Sharma    | 750000.00 |
+-- |       102 | Mohit Raj     |  55000.00 |
+-- |       103 | Manoj Saru    | 995000.00 |
+-- |       104 | Priya Jain    | 500000.00 |
+-- |       105 | Anuj Sharma   | 280000.00 |
+-- |       106 | Deepak Pandey | 750000.00 |
+-- +-----------+---------------+-----------+
+
+
+
+-- ============================================
+-- CREATE TRANSACTIONS TABLE
+-- ============================================
+
+CREATE TABLE IF NOT EXISTS transactions (
+    transaction_id INT AUTO_INCREMENT PRIMARY KEY,
+    from_account INT,
+    to_account INT,
+    amount DECIMAL(10,2),
+    transaction_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Output:
+-- Query OK, 0 rows affected
+
+
+
+-- View Transactions Table
+
+SELECT * FROM transactions;
+
+-- Output:
+-- Empty set
+
+
+
+-- ============================================
+-- INSERT TRANSACTION RECORD
+-- ============================================
+
+INSERT INTO transactions (from_account, to_account, amount)
+VALUES (102, 103, 5000);
+
+-- Output:
+-- Query OK, 1 row affected
+
+
+
+-- Commit Transaction
+
+COMMIT;
+
+-- Output:
+-- Query OK, 0 rows affected
+
+
+
+-- ============================================
+-- VIEW FINAL TRANSACTION RECORDS
+-- ============================================
+
+SELECT * FROM transactions;
+
+-- Output:
+-- +----------------+--------------+------------+---------+---------------------+
+-- | transaction_id | from_account | to_account | amount  | transaction_date    |
+-- +----------------+--------------+------------+---------+---------------------+
+-- |              1 |          102 |        103 | 5000.00 | 2026-02-09 12:47:43 |
+-- +----------------+--------------+------------+---------+---------------------+
+
+
+
+-- ============================================
+-- FINAL ACCOUNTS BALANCE
+-- ============================================
+
+SELECT * FROM accounts;
+
+-- Output:
+-- +-----------+---------------+-----------+
+-- | accountID | accountHOLDER | balance   |
+-- +-----------+---------------+-----------+
+-- |       101 | Raj Sharma    | 750000.00 |
+-- |       102 | Mohit Raj     |  55000.00 |
+-- |       103 | Manoj Saru    | 995000.00 |
+-- |       104 | Priya Jain    | 500000.00 |
+-- |       105 | Anuj Sharma   | 280000.00 |
+-- |       106 | Deepak Pandey | 750000.00 |
+-- +-----------+---------------+-----------+
+
+
+
+-- ============================================
+-- END OF BANK MANAGEMENT SYSTEM
+-- ============================================
