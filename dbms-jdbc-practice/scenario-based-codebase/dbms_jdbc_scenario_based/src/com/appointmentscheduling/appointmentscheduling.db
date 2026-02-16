@@ -1,0 +1,148 @@
+-- ============================================================
+-- Problem: Appointment Scheduling
+-- Database: sqlpractice
+-- Tables: patients, doctors, appointments, appointment_audit
+-- ============================================================
+
+mysql> USE sqlpractice;
+
+/* o/p
+Database changed
+*/
+
+-- ============================================================
+-- CHECK EXISTING BOOKINGS
+-- ============================================================
+
+mysql> SELECT *
+FROM appointments
+WHERE doctor_id = 1
+AND appointment_date = '2026-02-15'
+AND status = 'SCHEDULED';
+
+/* o/p
+Empty set (0.00 sec)
+*/
+
+-- ============================================================
+-- BOOK APPOINTMENT
+-- ============================================================
+
+mysql> INSERT INTO appointments
+(patient_id, doctor_id, appointment_date, appointment_time, status)
+VALUES (1,1,'2026-02-15','10:00:00','SCHEDULED');
+
+/* o/p
+Query OK, 1 row affected (0.01 sec)
+*/
+
+-- ============================================================
+-- SLOT COUNT
+-- ============================================================
+
+mysql> SELECT appointment_time,
+COUNT(*) AS slot_bookings
+FROM appointments
+WHERE doctor_id = 1
+AND appointment_date = '2026-02-15'
+AND status = 'SCHEDULED'
+GROUP BY appointment_time;
+
+/* o/p
++------------------+---------------+
+| appointment_time | slot_bookings |
++------------------+---------------+
+| 10:00:00         | 1             |
++------------------+---------------+
+*/
+
+-- ============================================================
+-- CANCEL APPOINTMENT
+-- ============================================================
+
+mysql> START TRANSACTION;
+
+/* o/p
+Query OK, 0 rows affected (0.00 sec)
+*/
+
+mysql> UPDATE appointments
+SET status = 'CANCELLED'
+WHERE appointment_id = 1;
+
+/* o/p
+Query OK, 1 row affected (0.00 sec)
+*/
+
+mysql> INSERT INTO appointment_audit (appointment_id, action)
+VALUES (1,'CANCELLED');
+
+/* o/p
+Query OK, 1 row affected (0.00 sec)
+*/
+
+mysql> COMMIT;
+
+/* o/p
+Query OK, 0 rows affected (0.00 sec)
+*/
+
+-- ============================================================
+-- RESCHEDULE APPOINTMENT
+-- ============================================================
+
+mysql> START TRANSACTION;
+
+/* o/p
+Query OK, 0 rows affected (0.00 sec)
+*/
+
+mysql> SELECT *
+FROM appointments
+WHERE doctor_id = 2
+AND appointment_date = '2026-02-16'
+AND appointment_time = '11:00:00'
+AND status = 'SCHEDULED';
+
+/* o/p
+Empty set (0.00 sec)
+*/
+
+mysql> UPDATE appointments
+SET doctor_id = 2,
+appointment_date = '2026-02-16',
+appointment_time = '11:00:00',
+status = 'SCHEDULED'
+WHERE appointment_id = 1;
+
+/* o/p
+Query OK, 1 row affected (0.00 sec)
+*/
+
+mysql> COMMIT;
+
+/* o/p
+Query OK, 0 rows affected (0.00 sec)
+*/
+
+-- ============================================================
+-- FINAL REPORT
+-- ============================================================
+
+mysql> SELECT a.appointment_time,
+p.name AS patient_name,
+d.doctor_name,
+a.status
+FROM appointments a
+JOIN patients p ON a.patient_id = p.patient_id
+JOIN doctors d ON a.doctor_id = d.doctor_id
+WHERE a.appointment_date = '2026-02-16'
+ORDER BY a.appointment_time;
+
+/* o/p
++------------------+---------------+-------------------+-----------+
+| appointment_time | patient_name  | doctor_name       | status    |
++------------------+---------------+-------------------+-----------+
+| 11:00:00         | Rahul Sharma  | Dr. Neha Kapoor   | SCHEDULED |
++------------------+---------------+-------------------+-----------+
+*/
