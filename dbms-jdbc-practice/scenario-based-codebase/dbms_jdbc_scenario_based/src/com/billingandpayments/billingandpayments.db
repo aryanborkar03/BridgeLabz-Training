@@ -1,0 +1,180 @@
+-- ============================================================
+-- Problem: Billing & Payments Management
+-- Database: sqlpractice
+-- Tables: doctors, visits, bills, payment_transactions
+-- ============================================================
+
+mysql> USE sqlpractice;
+
+/* o/p
+Database changed
+*/
+
+-- ============================================================
+-- ADD CONSULTATION FEE TO DOCTORS
+-- ============================================================
+
+mysql> ALTER TABLE doctors
+ADD COLUMN consultation_fee DECIMAL(10,2) DEFAULT 500;
+
+/* o/p
+Query OK, 0 rows affected (0.06 sec)
+*/
+
+-- ============================================================
+-- CREATE BILLS TABLE
+-- ============================================================
+
+mysql> CREATE TABLE IF NOT EXISTS bills (
+bill_id INT PRIMARY KEY AUTO_INCREMENT,
+visit_id INT,
+consultation_fee DECIMAL(10,2),
+additional_charges DECIMAL(10,2),
+total_amount DECIMAL(10,2),
+payment_status VARCHAR(20) DEFAULT 'UNPAID',
+payment_date DATE,
+payment_mode VARCHAR(30),
+FOREIGN KEY (visit_id) REFERENCES visits(visit_id)
+);
+
+/* o/p
+Query OK, 0 rows affected (0.06 sec)
+*/
+
+-- ============================================================
+-- CREATE PAYMENT TRANSACTIONS TABLE
+-- ============================================================
+
+mysql> CREATE TABLE IF NOT EXISTS payment_transactions (
+transaction_id INT PRIMARY KEY AUTO_INCREMENT,
+bill_id INT,
+amount_paid DECIMAL(10,2),
+payment_mode VARCHAR(30),
+payment_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+FOREIGN KEY (bill_id) REFERENCES bills(bill_id)
+);
+
+/* o/p
+Query OK, 0 rows affected (0.04 sec)
+*/
+
+-- ============================================================
+-- GENERATE BILL FOR VISIT
+-- Example: visit_id = 1
+-- ============================================================
+
+mysql> INSERT INTO bills
+(visit_id, consultation_fee, additional_charges, total_amount)
+SELECT
+v.visit_id,
+d.consultation_fee,
+200 AS additional_charges,
+(d.consultation_fee + 200) AS total_amount
+FROM visits v
+JOIN doctors d
+ON v.doctor_id = d.doctor_id
+WHERE v.visit_id = 1;
+
+/* o/p
+Query OK, 1 row affected (0.01 sec)
+*/
+
+-- ============================================================
+-- RECORD PAYMENT
+-- ============================================================
+
+mysql> START TRANSACTION;
+
+/* o/p
+Query OK, 0 rows affected (0.00 sec)
+*/
+
+mysql> UPDATE bills
+SET payment_status = 'PAID',
+payment_date = CURDATE(),
+payment_mode = 'UPI'
+WHERE bill_id = 1;
+
+/* o/p
+Query OK, 1 row affected (0.00 sec)
+*/
+
+mysql> INSERT INTO payment_transactions
+(bill_id, amount_paid, payment_mode)
+SELECT
+bill_id,
+total_amount,
+'UPI'
+FROM bills
+WHERE bill_id = 1;
+
+/* o/p
+Query OK, 1 row affected (0.00 sec)
+*/
+
+mysql> COMMIT;
+
+/* o/p
+Query OK, 0 rows affected (0.01 sec)
+*/
+
+-- ============================================================
+-- VIEW OUTSTANDING BILLS
+-- ============================================================
+
+mysql> SELECT
+p.patient_id,
+p.name,
+COUNT(b.bill_id) AS total_unpaid_bills,
+SUM(b.total_amount) AS total_due
+FROM bills b
+JOIN visits v ON b.visit_id = v.visit_id
+JOIN patients p ON v.patient_id = p.patient_id
+WHERE b.payment_status = 'UNPAID'
+GROUP BY p.patient_id, p.name;
+
+/* o/p
+Empty set (0.00 sec)
+*/
+
+-- ============================================================
+-- REVENUE REPORT BY DATE
+-- ============================================================
+
+mysql> SELECT
+DATE(payment_date) AS revenue_date,
+SUM(total_amount) AS total_revenue
+FROM bills
+WHERE payment_status = 'PAID'
+AND payment_date BETWEEN '2026-02-01' AND '2026-02-28'
+GROUP BY DATE(payment_date);
+
+/* o/p
++--------------+---------------+
+| revenue_date | total_revenue |
++--------------+---------------+
+| 2026-02-16   | 700.00        |
++--------------+---------------+
+*/
+
+-- ============================================================
+-- DOCTOR-WISE REVENUE REPORT
+-- ============================================================
+
+mysql> SELECT
+d.doctor_name,
+SUM(b.total_amount) AS revenue
+FROM bills b
+JOIN visits v ON b.visit_id = v.visit_id
+JOIN doctors d ON v.doctor_id = d.doctor_id
+WHERE b.payment_status = 'PAID'
+GROUP BY d.doctor_name
+HAVING revenue > 0;
+
+/* o/p
++------------------+---------+
+| doctor_name      | revenue |
++------------------+---------+
+| Dr. Rajesh Mehta | 700.00  |
++------------------+---------+
+*/
