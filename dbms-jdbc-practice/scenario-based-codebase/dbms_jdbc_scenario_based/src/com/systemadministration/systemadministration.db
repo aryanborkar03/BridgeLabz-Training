@@ -1,0 +1,201 @@
+-- ============================================================
+-- Problem: System Administration & Audit Management
+-- Database: sqlpractice
+-- Covers:
+-- Specialty Management
+-- Audit Logging
+-- Triggers for Data Monitoring
+-- ============================================================
+
+mysql> USE sqlpractice;
+
+/* o/p
+Database changed
+*/
+
+-- ============================================================
+-- CREATE SPECIALTIES TABLE
+-- ============================================================
+
+mysql> CREATE TABLE IF NOT EXISTS specialties (
+specialty_id INT PRIMARY KEY AUTO_INCREMENT,
+specialty_name VARCHAR(80) UNIQUE NOT NULL
+);
+
+/* o/p
+Query OK, 0 rows affected (0.02 sec)
+*/
+
+-- ============================================================
+-- INSERT SPECIALTIES
+-- ============================================================
+
+mysql> INSERT INTO specialties (specialty_name) VALUES
+('Cardiology'),
+('Dermatology'),
+('Orthopedics'),
+('Pediatrics')
+ON DUPLICATE KEY UPDATE
+specialty_name = VALUES(specialty_name);
+
+/* o/p
+Query OK, 4 rows affected (0.01 sec)
+*/
+
+-- ============================================================
+-- UPDATE SPECIALTY
+-- ============================================================
+
+mysql> UPDATE specialties
+SET specialty_name = 'Neurology'
+WHERE specialty_name = 'Dermatology';
+
+/* o/p
+Query OK, 1 row affected (0.00 sec)
+*/
+
+-- ============================================================
+-- SAFE DELETE SPECIALTY
+-- (Only if not mapped to doctors)
+-- ============================================================
+
+mysql> DELETE FROM specialties
+WHERE specialty_name = 'Pediatrics'
+AND specialty_id NOT IN (
+SELECT specialty_id FROM doctors
+);
+
+/* o/p
+Query OK, 1 row affected (0.00 sec)
+*/
+
+-- ============================================================
+-- CREATE AUDIT LOG TABLE
+-- ============================================================
+
+mysql> CREATE TABLE IF NOT EXISTS audit_log (
+audit_id INT PRIMARY KEY AUTO_INCREMENT,
+table_name VARCHAR(50),
+action_type VARCHAR(20),
+record_id INT,
+action_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+/* o/p
+Query OK, 0 rows affected (0.05 sec)
+*/
+
+-- ============================================================
+-- INSERT TRIGGER
+-- ============================================================
+
+mysql> DELIMITER $$
+
+mysql> CREATE TRIGGER patient_insert_audit
+AFTER INSERT ON patients
+FOR EACH ROW
+BEGIN
+INSERT INTO audit_log(table_name, action_type, record_id)
+VALUES ('patient','INSERT', NEW.patient_id);
+END$$
+
+/* o/p
+Query OK, 0 rows affected (0.01 sec)
+*/
+
+mysql> DELIMITER ;
+
+-- ============================================================
+-- UPDATE TRIGGER
+-- ============================================================
+
+mysql> DELIMITER $$
+
+mysql> CREATE TRIGGER patient_update_audit
+AFTER UPDATE ON patients
+FOR EACH ROW
+BEGIN
+INSERT INTO audit_log(table_name, action_type, record_id)
+VALUES ('patients','UPDATE', NEW.patient_id);
+END$$
+
+/* o/p
+Query OK, 0 rows affected (0.01 sec)
+*/
+
+mysql> DELIMITER ;
+
+-- ============================================================
+-- DELETE TRIGGER
+-- ============================================================
+
+mysql> DELIMITER $$
+
+mysql> CREATE TRIGGER patient_delete_audit
+AFTER DELETE ON patients
+FOR EACH ROW
+BEGIN
+INSERT INTO audit_log(table_name, action_type, record_id)
+VALUES ('patients','DELETE', OLD.patient_id);
+END$$
+
+/* o/p
+Query OK, 0 rows affected (0.01 sec)
+*/
+
+mysql> DELIMITER ;
+
+-- ============================================================
+-- TEST AUDIT LOGGING
+-- ============================================================
+
+mysql> INSERT INTO patients(name, phone)
+VALUES ('Rahul Test','9999911111');
+
+/* o/p
+Query OK, 1 row affected (0.01 sec)
+*/
+
+mysql> UPDATE patients
+SET name = 'Rahul Updated'
+WHERE name = 'Rahul Test';
+
+/* o/p
+Query OK, 1 row affected (0.00 sec)
+*/
+
+mysql> DELETE FROM patients
+WHERE name = 'Rahul Updated';
+
+/* o/p
+Query OK, 1 row affected (0.00 sec)
+*/
+
+-- ============================================================
+-- VIEW AUDIT LOGS
+-- ============================================================
+
+mysql> SELECT * FROM audit_log;
+
+/* o/p
++----------+------------+-------------+-----------+---------------------+
+| audit_id | table_name | action_type | record_id | action_time         |
++----------+------------+-------------+-----------+---------------------+
+| 1        | patients   | INSERT      | 3         | 2026-02-16 13:17:55 |
+| 2        | patients   | UPDATE      | 3         | 2026-02-16 13:17:55 |
+| 3        | patients   | DELETE      | 3         | 2026-02-16 13:17:55 |
++----------+------------+-------------+-----------+---------------------+
+*/
+
+-- ============================================================
+-- FILTERED AUDIT REPORT
+-- ============================================================
+
+mysql> SELECT *
+FROM audit_log
+WHERE table_name = 'patients'
+AND action_time BETWEEN '2026-01-01' AND '2026-12-31';
+
+/* o/p
+3 rows in set (0.00 sec)
+*/
