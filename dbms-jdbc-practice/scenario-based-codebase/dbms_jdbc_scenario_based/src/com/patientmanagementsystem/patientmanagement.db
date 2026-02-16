@@ -1,0 +1,216 @@
+-- =========================================================
+-- PATIENT MANAGEMENT SYSTEM
+-- USE CASE IMPLEMENTATION (UC-1.1 to UC-1.4)
+-- =========================================================
+
+
+
+-- =========================================================
+-- UC-1.1 : REGISTER NEW PATIENT
+-- =========================================================
+
+-- Step 1 : Use Database
+
+USE sqlpractice;
+
+-- Output:
+-- Database changed
+
+
+
+-- Create Patients Table
+
+CREATE TABLE IF NOT EXISTS patients (
+    patient_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    dob DATE NOT NULL,
+    phone VARCHAR(15) UNIQUE,
+    email VARCHAR(100) UNIQUE,
+    address VARCHAR(255),
+    blood_group VARCHAR(5)
+);
+
+-- Output:
+-- Query OK, 0 rows affected
+
+
+
+-- Register Patients
+
+INSERT INTO patients
+(name, dob, phone, email, address, blood_group)
+VALUES
+('Aryan Borkar','2003-05-10','9876543210',
+ 'aryan987676@email.com','Bhopal','B+'),
+
+('Vishal Sharma','2002-08-15','9123456789',
+ 'vishal@email.com','Delhi','AB+');
+
+-- Output:
+-- Query OK, 2 rows affected
+
+
+
+-- View Patients
+
+SELECT * FROM patients;
+
+-- Output:
+-- +------------+---------------+------------+------------+-----------------------+---------+-------------+
+-- | patient_id | name          | dob        | phone      | email                 | address | blood_group |
+-- +------------+---------------+------------+------------+-----------------------+---------+-------------+
+-- | 1          | Aryan Borkar  | 2003-05-10 | 9876543210 | aryan987676@email.com | Bhopal  | B+          |
+-- | 2          | Vishal Sharma | 2002-08-15 | 9123456789 | vishal@email.com      | Delhi   | AB+         |
+-- +------------+---------------+------------+------------+-----------------------+---------+-------------+
+
+
+
+-- =========================================================
+-- UC-1.2 : UPDATE PATIENT INFORMATION
+-- =========================================================
+
+UPDATE patients
+SET address = 'Indore',
+    phone = '8787654592'
+WHERE patient_id = 1;
+
+-- Output:
+-- Query OK, 1 row affected
+-- Rows matched: 1  Changed: 1
+
+
+
+-- Verify Update
+
+SELECT * FROM patients
+WHERE patient_id = 1;
+
+-- Output:
+-- Shows updated address and phone
+
+
+
+-- =========================================================
+-- UC-1.3 : SEARCH PATIENT RECORDS
+-- =========================================================
+
+-- Search by Name (LIKE)
+
+SELECT * FROM patients
+WHERE name LIKE '%Aryan%';
+
+-- Output:
+-- Shows Aryan Borkar record
+
+
+
+-- Search by Phone
+
+SELECT * FROM patients
+WHERE phone = '9123456789';
+
+-- Output:
+-- Shows Vishal Sharma record
+
+
+
+-- Search by Patient ID
+
+SELECT * FROM patients
+WHERE patient_id = 1;
+
+-- Output:
+-- Shows Aryan Borkar record
+
+
+
+-- =========================================================
+-- UC-1.4 : VIEW PATIENT VISIT HISTORY
+-- =========================================================
+
+-- Create Doctors Table
+
+CREATE TABLE IF NOT EXISTS doctors (
+    doctor_id INT AUTO_INCREMENT PRIMARY KEY,
+    doctor_name VARCHAR(100),
+    specialization VARCHAR(100)
+);
+
+-- Output:
+-- Query OK, 0 rows affected
+
+
+
+-- Create Visits Table
+
+CREATE TABLE IF NOT EXISTS visits (
+    visit_id INT AUTO_INCREMENT PRIMARY KEY,
+    patient_id INT,
+    doctor_id INT,
+    visit_date DATE,
+    diagnosis VARCHAR(255),
+
+    FOREIGN KEY (patient_id) REFERENCES patients(patient_id),
+    FOREIGN KEY (doctor_id) REFERENCES doctors(doctor_id)
+);
+
+-- Output:
+-- Query OK, 0 rows affected
+
+
+
+-- Insert Doctors
+
+INSERT INTO doctors (doctor_name, specialization)
+VALUES
+('Dr. Sharma','Cardiologist'),
+('Dr. Mehta','Dermatologist');
+
+-- Output:
+-- Query OK, 2 rows affected
+
+
+
+-- Insert Visit Records
+
+INSERT INTO visits
+(patient_id, doctor_id, visit_date, diagnosis)
+VALUES
+(1,1,'2026-02-01','High Blood Pressure'),
+(1,2,'2026-02-05','Skin Allergy'),
+(2,1,'2026-02-07','Chest Pain');
+
+-- Output:
+-- Query OK, 3 rows affected
+
+
+
+-- Patient Visit History (JOIN)
+
+SELECT
+    p.patient_id,
+    p.name AS patient_name,
+    d.doctor_name,
+    d.specialization,
+    v.visit_date,
+    v.diagnosis
+FROM visits v
+JOIN patients p ON v.patient_id = p.patient_id
+JOIN doctors d ON v.doctor_id = d.doctor_id
+WHERE p.patient_id = 1
+ORDER BY v.visit_date;
+
+-- Output:
+-- +------------+--------------+-------------+----------------+------------+---------------------+
+-- | patient_id | patient_name | doctor_name | specialization | visit_date | diagnosis           |
+-- +------------+--------------+-------------+----------------+------------+---------------------+
+-- | 1          | Aryan Borkar | Dr. Sharma  | Cardiologist   | 2026-02-01 | High Blood Pressure |
+-- | 1          | Aryan Borkar | Dr. Mehta   | Dermatologist  | 2026-02-05 | Skin Allergy        |
+-- +------------+--------------+-------------+----------------+------------+---------------------+
+
+
+
+-- =========================================================
+-- END OF PATIENT MANAGEMENT MODULE
+-- (UC-1.1 to UC-1.4 COMPLETED)
+-- =========================================================
