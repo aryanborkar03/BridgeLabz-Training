@@ -1,0 +1,108 @@
+-- ============================================================
+-- Problem: Visit Management & Medical Records
+-- Database: sqlpractice
+-- Tables: patients, doctors, appointments, visits, prescriptions
+-- ============================================================
+
+mysql> USE sqlpractice;
+
+/* o/p
+Database changed
+*/
+
+-- ============================================================
+-- CREATE APPOINTMENTS
+-- ============================================================
+
+mysql> INSERT INTO appointments
+(patient_id, doctor_id, appointment_date, appointment_time, status)
+VALUES
+(1,1,'2026-02-18','10:00:00','SCHEDULED'),
+(2,2,'2026-02-19','11:00:00','SCHEDULED');
+
+/* o/p
+Query OK, 2 rows affected (0.01 sec)
+Records: 2  Duplicates: 0  Warnings: 0
+*/
+
+-- ============================================================
+-- VISIT ENTRY (TRANSACTION)
+-- ============================================================
+
+mysql> START TRANSACTION;
+
+/* o/p
+Query OK, 0 rows affected (0.00 sec)
+*/
+
+mysql> INSERT INTO visits
+(patient_id, doctor_id, visit_date, diagnosis)
+VALUES
+(1,1,'2026-02-18','Seasonal Flu');
+
+/* o/p
+Query OK, 1 row affected (0.00 sec)
+*/
+
+mysql> UPDATE appointments
+SET status = 'COMPLETED'
+WHERE appointment_id = 1;
+
+/* o/p
+Query OK, 1 row affected (0.00 sec)
+*/
+
+mysql> COMMIT;
+
+/* o/p
+Query OK, 0 rows affected (0.00 sec)
+*/
+
+-- ============================================================
+-- INSERT PRESCRIPTIONS
+-- ============================================================
+
+mysql> INSERT INTO prescriptions
+(visit_id, medicine_name, dosage, duration_days)
+VALUES
+(1,'Paracetamol','500mg twice daily',5),
+(1,'Vitamin C','Once daily',7);
+
+/* o/p
+Query OK, 2 rows affected (0.01 sec)
+Records: 2  Duplicates: 0  Warnings: 0
+*/
+
+-- ============================================================
+-- MEDICAL HISTORY REPORT
+-- ============================================================
+
+mysql> SELECT
+p.patient_id,
+p.name,
+a.appointment_date,
+a.appointment_time,
+v.visit_date,
+v.diagnosis,
+pr.medicine_name,
+pr.dosage,
+pr.duration_days
+FROM patients p
+JOIN appointments a
+ON p.patient_id = a.patient_id
+JOIN visits v
+ON p.patient_id = v.patient_id
+AND a.doctor_id = v.doctor_id
+JOIN prescriptions pr
+ON v.visit_id = pr.visit_id
+WHERE p.patient_id = 1
+ORDER BY v.visit_date DESC;
+
+/* o/p
++------------+--------------+------------------+------------------+------------+--------------+---------------+-------------------+---------------+
+| patient_id | name         | appointment_date | appointment_time | visit_date | diagnosis    | medicine_name | dosage            | duration_days |
++------------+--------------+------------------+------------------+------------+--------------+---------------+-------------------+---------------+
+| 1          | Rahul Sharma | 2026-02-18       | 10:00:00         | 2026-02-18 | Seasonal Flu | Paracetamol   | 500mg twice daily | 5             |
+| 1          | Rahul Sharma | 2026-02-18       | 10:00:00         | 2026-02-18 | Seasonal Flu | Vitamin C     | Once daily        | 7             |
++------------+--------------+------------------+------------------+------------+--------------+---------------+-------------------+---------------+
+*/
